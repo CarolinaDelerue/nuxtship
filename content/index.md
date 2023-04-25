@@ -1,3 +1,9 @@
-# Hello
 
-This is the home page.
+::hero
+::
+::features
+::
+::logos
+::
+::cta
+::
