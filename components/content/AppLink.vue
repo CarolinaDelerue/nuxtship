@@ -50,18 +50,6 @@ const linkClass = computed(() => {
     props.classLink
   )
 })
-
-// const styles = {
-//     'outline': "bg-white border-2 border-black hover:bg-gray-100 text-black ",
-//    'primary': "bg-black text-white hover:bg-gray-800  border-2 border-transparent",
-//    'inverted': "bg-white text-black   border-2 border-transparent",
-//     'muted': "bg-gray-100 hover:bg-gray-200 border-2 border-transparent",
-// },
-
-// const sizes = {
-//     'md': 'bg-text-red-600 text-bg-text-blue-600',
-//     'lg': 'bg-text-blue-600 text-text-pink',
-// }
 </script>
 
 <template>

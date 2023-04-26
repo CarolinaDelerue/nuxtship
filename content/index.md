@@ -8,8 +8,8 @@
 
 ::app-link
 ---
-size: 'md'
-variant: 'outline'
+sizes: 'md'
+variants: 'outline'
 to: 'https://www.nuxtlabs.com'
 classLink: 'flex gap-1 items-center justify-center'
 ---

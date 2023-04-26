@@ -1,8 +1,5 @@
 <script setup lang="ts">
 
-// @ts-ignore
-// import { Icon } from "astro-icon";
-
 const items = [
     {
         title: "Bring Your Own Framework",
@@ -44,6 +41,7 @@ const items = [
 </script>
 
 <template>
+    <div class="container">
     <div class="mt-16 md:mt-0">
         <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
             Everything you need to start a website
@@ -57,7 +55,7 @@ const items = [
     <div v-for="item in items" :key="item.title" >
         <div class="flex gap-4 items-start">
             <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
-                <!-- <Icon class="text-white" name={item.icon} /> -->
+            <!-- <Icon class="text-white" name={item.icon} /> -->
             </div>
             <div>
                 <h3 class="font-semibold text-lg">{{ item.title }}</h3>
@@ -65,5 +63,6 @@ const items = [
             </div>
         </div>
     </div>
+</div>
 </div>
 </template>

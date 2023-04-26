@@ -9,7 +9,6 @@ export default <Partial<Config>> {
         'xl': '1280px'
       },
       center: true,
-      backgroundColor: 'green-600',
     },
   },
   darkMode: 'class',
