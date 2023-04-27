@@ -63,12 +63,6 @@ const pricing = [
 <template>
 <!-- <Layout title="Pricing">
   <Container> -->
-    <SectionHead>
-      <Fragment slot="title">Pricing</Fragment>
-      <Fragment slot="desc"
-        >Simple & Predictable pricing. No Surprises.</Fragment
-      >
-    </SectionHead>
 
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
     <!-- <Pricing v-for="item in pricing" :key="item.name" :plan="item" /> -->
@@ -92,7 +86,7 @@ const pricing = [
                 </li>
             </ul>
             <div class="flex mt-8">
-                <AppLink to="/"> Applink
+                <AppLink to="item.button.link">{{ item.button.text }}
                 </AppLink>
             </div>
         </div>
