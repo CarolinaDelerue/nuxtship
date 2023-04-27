@@ -1,6 +1,7 @@
 <template>
 <div>
     <h1>test1</h1>
-    <Link size="lg" variant="outline" to="https://nuxtlabs.com"> link </Link>
+    <AppButton size="md" variants="primary">button</AppButton>
+    <AppLink size="md" variants="muted">applink</AppLink>
 </div>
 </template>

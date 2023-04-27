@@ -23,14 +23,14 @@ import { Icon } from "astro-icon";
                     target="_blank"
                     class="flex gap-1 items-center justify-center"
                     rel="noopener">
-                    <!-- <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" /> -->
+                    <span class="h-5 w-5 text-white i-bx-bxs-cloud-download"></span>
 
                     Download for Free
                 </AppLink>
                 <AppLink sizes="lg" rel="noopener" to="https://github.com/surjithctly/astroship"
                     class="flex gap-1 items-center justify-center "
                     target="_blank">
-                    <!-- <Icon class="text-black w-4 h-4" name="bx:bxl-github" /> -->
+                    <span class="h-5 w-5 text-white i-bx-bxl-github"></span>
                     GitHub Repo
                 </AppLink>
             </div>
