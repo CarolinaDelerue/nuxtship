@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@egoist/tailwindcss-icons": "^1.0.7",
+    "@iconify/json": "^2.2.56",
     "@nuxt/content": "^2.6.0",
     "@nuxt/image-edge": "1.0.0-28020728.5df24eb",
     "@nuxthq/studio": "^0.10.1",

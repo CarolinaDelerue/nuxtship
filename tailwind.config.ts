@@ -17,6 +17,8 @@ export default <Partial<Config>> {
     iconsPlugin({
       // Icons collection to use, see https://icones.js.org
       collections: getIconCollections([
+        'bx',
+        'simple-icons',
         // 'heroicons',
         // 'ph'
       ]),

@@ -1,13 +1,13 @@
 <template>
-<div class="container mt-24">
-  <h2 class="text-center text-slate-500">Works with your technologies</h2>
-  <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
-    <!-- <Icon class="h-8 md:h-12" name="simple-icons:react" />
-    <Icon class="h-8 md:h-12" name="simple-icons:svelte" />
-    <Icon class="h-8 md:h-14" name="simple-icons:tailwindcss" />
-    <Icon class="h-8 md:h-16" name="simple-icons:alpinedotjs" />
-    <Icon class="h-8 md:h-12" name="simple-icons:vercel" />
-    <Icon class="h-8 md:h-12" name="simple-icons:astro" /> -->
+  <div class="container mt-24">
+    <h2 class="text-center text-slate-500">Works with your technologies</h2>
+    <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+      <span class="h:8 w-8 md:h-11 md:w-11 i-simple-icons-react"></span>
+      <span class="h:8 w-8 md:h-11 md:w-11 i-simple-icons-svelte"></span>
+      <span class="h:8 w-8 md:h-11 md:w-11 i-simple-icons-tailwindcss"></span>
+      <span class="h:8 w-8 md:h-11 md:w-11 i-simple-icons-alpinedotjs"></span>
+      <span class="h:8 w-8 md:h-11 md:w-11 texte-black i-simple-icons-vercel"></span>
+      <span class="h:8 w-8 md:h-11 md:w-11 i-simple-icons-astro"></span>
+    </div>
   </div>
-</div>
 </template>

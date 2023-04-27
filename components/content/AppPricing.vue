@@ -64,7 +64,7 @@ const pricing = [
 <!-- <Layout title="Pricing">
   <Container> -->
 
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+    <div class=" container grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
     <!-- <Pricing v-for="item in pricing" :key="item.name" :plan="item" /> -->
     <div v-for="item in pricing" :key="item.name">
         <div
