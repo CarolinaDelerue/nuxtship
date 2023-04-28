@@ -1,16 +1,11 @@
 <script setup lang="ts">
 
-
 const publishedTeamMembers = await queryContent('about', 'team').find()
-console.log(publishedTeamMembers)
 
 </script>
 
 <template>
-    <div>test</div>
-    <div></div>
-
-<!-- <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+<div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
         Empowering the world with Astro.
       </h2>
@@ -20,12 +15,14 @@ console.log(publishedTeamMembers)
         the job. This is what makes our team so special.
       </p>
     </div>
-    <div v-for="teamMemberEntry in publishedTeamMembers" :key="teamMemberEntry.data.name" class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+      <div v-for="(teamMemberEntry, index) in publishedTeamMembers" :key="index">
           <div class="group">
             <div class="w-full aspect-square">
               <img
-                src="teamMemberEntry.data.avatar.src"
-                alt="teamMemberEntry.data.avatar.alt"
+                :src="teamMemberEntry.avatar.src"
+                :alt="teamMemberEntry.avatar.alt"
+                sizes="(max-width: 800px) 100vw, 400px"
                 aspectRatio="1:1"
                 background="#ffffff"
                 fit="cover"
@@ -36,12 +33,13 @@ console.log(publishedTeamMembers)
 
             <div class="mt-4 text-center">
               <h2 class="text-lg text-gray-800">
-                {{ teamMemberEntry.data.name }}
+                {{ teamMemberEntry.name }}
               </h2>
               <h3 class="text-sm text-slate-500">
-                {{ teamMemberEntry.data.title }}
+                {{ teamMemberEntry.title }}
               </h3>
             </div>
           </div>
-    </div> -->
+        </div>
+    </div>
 </template>
