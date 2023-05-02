@@ -19,15 +19,11 @@ const publishedTeamMembers = await queryContent('about', 'team').find()
       <div v-for="(teamMemberEntry, index) in publishedTeamMembers" :key="index">
           <div class="group">
             <div class="w-full aspect-square">
-              <img
+              <NuxtImg
                 :src="teamMemberEntry.avatar.src"
                 :alt="teamMemberEntry.avatar.alt"
-                sizes="(max-width: 800px) 100vw, 400px"
-                aspectRatio="1:1"
-                background="#ffffff"
-                fit="cover"
-                position="center"
-                class="w-full rounded-md transition group-hover:-translate-y-1 group-hover:shadow-xl"
+                fit="fill"
+                class="aspect-square"
               />
             </div>
 

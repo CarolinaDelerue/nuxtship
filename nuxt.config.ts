@@ -22,5 +22,8 @@ export default defineNuxtConfig({
   },
   colorMode: {
     classSuffix: ''
+  },
+  image: {
+    domains: ['unsplash.com']
   }
 })
