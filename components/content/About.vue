@@ -18,12 +18,11 @@ const publishedTeamMembers = await queryContent('about', 'team').find()
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       <div v-for="(teamMemberEntry, index) in publishedTeamMembers" :key="index">
           <div class="group">
-            <div class="w-full aspect-square">
+            <div class="w-full">
               <NuxtImg
                 :src="teamMemberEntry.avatar.src"
                 :alt="teamMemberEntry.avatar.alt"
-                fit="fill"
-                class="aspect-square"
+                class="aspect-square object-cover"
               />
             </div>
 

@@ -19,6 +19,7 @@ export default <Partial<Config>> {
       collections: getIconCollections([
         'bx',
         'simple-icons',
+        'uil',
         // 'heroicons',
         // 'ph'
       ]),
