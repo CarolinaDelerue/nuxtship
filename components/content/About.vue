@@ -25,7 +25,6 @@ const publishedTeamMembers = await queryContent('about', 'team').find()
                 class="aspect-square object-cover"
               />
             </div>
-
             <div class="mt-4 text-center">
               <h2 class="text-lg text-gray-800">
                 {{ teamMemberEntry.name }}

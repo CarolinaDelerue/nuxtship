@@ -1,4 +1,3 @@
-
 <template>
   <div class="mt-16 text-center">
     <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">

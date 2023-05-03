@@ -11,8 +11,6 @@ const blogList = publishedBlogEntries.filter(page => page._path !== '/blog')
 </script>
 
 <template>
-<!-- <Layout title="Blog">
-  <Container> -->
     <main class="mt-16">
       <div class="grid gap-16 max-w-4xl mx-auto" >
       <ul v-for="(blogPostEntry, index) in blogList" :key="index" >
@@ -49,7 +47,4 @@ const blogList = publishedBlogEntries.filter(page => page._path !== '/blog')
       </ul>
     </div>
     </main>
-  <!-- </Container>
-</Layout> -->
-
 </template>

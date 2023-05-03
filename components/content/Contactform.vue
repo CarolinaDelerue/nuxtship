@@ -1,7 +1,6 @@
 <template>
   <form action="https://api.web3forms.com/submit" method="POST" ref="form" class="needs-validation" novalidate>
     <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-    <!-- Create your free access key from https://web3forms.com/ -->
     <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
     <div class="mb-5">
       <input type="text" placeholder="Full Name" required

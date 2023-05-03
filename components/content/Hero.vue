@@ -1,9 +1,3 @@
-<!-- ---
-import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/hero.png";
-import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon";
---- -->
 <template>
     <main class="container grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
         <div class="py-6 md:order-1 hidden md:block">
