@@ -4,8 +4,8 @@ const publishedBlogEntries = await queryContent('blog').find()
 const blogList = publishedBlogEntries.filter(page => page._path !== '/blog')
 
 //TODO
-// blogList.sort(function (a, b) {
-//   return b.publishDate.valueOf() - a.publishDate.valueOf();
+// publishedBlogEntries.sort(function (a, b) {
+//   return b.page.publishDate.valueOf() - a.page.publishDate.valueOf();
 // });
 
 </script>

@@ -32,32 +32,29 @@ const menuitems = [
 
 <template>
   <header class="flex flex-row justify-between items-center my-5 container px-5">
-    <a href="/" class="text-lg lg:w-48"
-      ><span class="font-bold text-slate-800">Astro</span><span
-        class="text-slate-500">ship</span
-      >
-    </a>
-    <button class="lg:hidden flex w-full justify-end">
-      test
-    </button>
-    <nav class="hidden lg:block">
+    <NuxtLink href="/" class="text-lg lg:w-48"><span class="font-bold text-slate-800">Astro</span><span
+          class="text-slate-500">ship</span>
+    </NuxtLink>
+    <div class="lg:hidden flex w-full justify-end">
+      <MenuIcon class="h-4 w-4 text-gray-800" />
+    </div>
+    <nav class="nuxtnav-toggle hidden lg:block">
       <div class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
         <ul class="flex flex-col lg:flex-row lg:gap-3">
           <li v-for="(item, index) in menuitems" :key="index">
-            <NuxtLink
-              :to= "item.path"
-              class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+            <NuxtLink :to="item.path" class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900">
               {{ item.title }}
             </NuxtLink>
           </li>
         </ul>
       </div>
     </nav>
-
     <div>
-      <div class="hidden lg:flex items-center justify-end gap-4 w-48">
-        <a href="#" class="w-full text-right">Log in</a>
-        <AppLink to="#" size="md" block>Sign up</AppLink>
+      <!-- TODO
+      probleme with button -->
+      <div class="hidden lg:flex items-center justify-end gap-4">
+        <AppLink to="#" variants="inverted" class="text-right">Log in</AppLink>
+        <AppLink to="#" size="md" block >Sign up</AppLink>
       </div>
     </div>
   </header>

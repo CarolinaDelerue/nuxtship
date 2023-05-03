@@ -37,7 +37,7 @@ const pricing = [
     ],
     button: {
       text: "Get Started",
-      link: "#",
+      link: "/",
     },
   },
   {
@@ -61,11 +61,7 @@ const pricing = [
 </script>
 
 <template>
-<!-- <Layout title="Pricing">
-  <Container> -->
-
     <div class=" container grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
-    <!-- <Pricing v-for="item in pricing" :key="item.name" :plan="item" /> -->
     <div v-for="item in pricing" :key="item.name">
         <div
             class="flex flex-col w-full order-first lg:order-none border-2 border-[#D8DEE9] border-opacity-50 py-5 px-6 rounded-md">
@@ -86,13 +82,12 @@ const pricing = [
                 </li>
             </ul>
             <div class="flex mt-8">
-                <AppLink to="item.button.link">{{ item.button.text }}
+              <!-- TODO
+              white button -->
+                <AppLink :to="item.button.link" block >{{ item.button.text }}
                 </AppLink>
             </div>
         </div>
     </div>
   </div>
-  <!-- </Container>
-</Layout> -->
-
 </template>
