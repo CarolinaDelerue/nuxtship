@@ -1,7 +1,14 @@
 <template>
-  <AppHeader />
-  <div class="h-[calc(100vh-80px)]">
-    <NuxtPage />
+  <div class="flex flex-col">
+    <AppHeader />
+    <div>
+      <NuxtPage />
+    </div>
+    <AppFooter />
   </div>
-  <AppFooter />
 </template>
+
+<!-- display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100dvh',
+    overflow: 'hidden', -->

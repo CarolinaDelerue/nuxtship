@@ -1,10 +1,64 @@
-<template>
-  <header class="flex justify-between items-center w-full my-5">
-    <div>Logo</div>
-    <nav class="w-full flex justify-center items-center">
-    This is the header
-    </nav>
-    <button>button</button>
-  </header>
+<script setup lang="ts">
 
+const menuitems = [
+  {
+    title: "Features",
+    path: "/",
+    // children: [
+    //   { title: "Action", path: "/" },
+    //   { title: "Another action", path: "#" },
+    //   { title: "Dropdown Submenu", path: "#" },
+    //   { title: "404 Page", path: "/404" },
+  },
+  {
+    title: "Pricing",
+    path: "/pricing",
+  },
+  {
+    title: "About",
+    path: "/about",
+  },
+  {
+    title: "Blog",
+    path: "/blog",
+  },
+  {
+    title: "Contact",
+    path: "/contact",
+  },
+];
+
+</script>
+
+<template>
+  <header class="flex flex-row justify-between items-center my-5 container px-5">
+    <a href="/" class="text-lg lg:w-48"
+      ><span class="font-bold text-slate-800">Astro</span><span
+        class="text-slate-500">ship</span
+      >
+    </a>
+    <button class="lg:hidden flex w-full justify-end">
+      test
+    </button>
+    <nav class="hidden lg:block">
+      <div class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+        <ul class="flex flex-col lg:flex-row lg:gap-3">
+          <li v-for="(item, index) in menuitems" :key="index">
+            <NuxtLink
+              :to= "item.path"
+              class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+              {{ item.title }}
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div>
+      <div class="hidden lg:flex items-center justify-end gap-4 w-48">
+        <a href="#" class="w-full text-right">Log in</a>
+        <AppLink to="#" size="md" block>Sign up</AppLink>
+      </div>
+    </div>
+  </header>
 </template>
