@@ -9,8 +9,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@egoist/tailwindcss-icons": "^1.0.7",
-    "@iconify/json": "^2.2.56",
     "@nuxt/content": "^2.6.0",
     "@nuxt/image-edge": "1.0.0-28020728.5df24eb",
     "@nuxthq/studio": "^0.10.1",
@@ -18,7 +16,8 @@
     "@nuxtjs/html-validator": "^1.2.5",
     "@nuxtjs/tailwindcss": "^6.6.6",
     "@vueuse/core": "^10.0.2",
-    "@vueuse/nuxt": "^10.0.2"
+    "@vueuse/nuxt": "^10.0.2",
+    "nuxt-icon": "^0.4.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "^0.4.1",

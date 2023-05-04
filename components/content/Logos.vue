@@ -4,12 +4,12 @@
       <ContentSlot :use="$slots.title" unwrap="p" />
     </h2>
     <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
-      <span class="h-8 w-8 md:w-12 md:h-12 i-simple-icons-react"></span>
-      <span class="h-8 w-8 md:w-12 md:h-12 i-simple-icons-svelte"></span>
-      <span class="h-8 w-8 md:w-14 md:h-12 i-simple-icons-tailwindcss"></span>
-      <span class="h-8 w-8 md:w-16 md:h-12 i-simple-icons-alpinedotjs"></span>
-      <span class="h-8 w-8 md:w-12 md:h-12 i-simple-icons-vercel"></span>
-      <span class="h-8 w-8 md:w-12 md:h-12 i-simple-icons-astro"></span>
+      <Icon class="h-8 w-8 md:w-12 md:h-12" name="simple-icons:react" />
+      <Icon class="h-8 w-8 md:w-12 md:h-12" name="simple-icons:svelte" />
+      <Icon class="h-8 w-8 md:w-14 md:h-12" name="simple-icons:tailwindcss" />
+      <Icon class="h-8 w-8 md:w-16 md:h-12" name="simple-icons:alpinedotjs" />
+      <Icon class="h-8 w-8 md:w-12 md:h-12" name="simple-icons:vercel" />
+      <Icon class="h-8 w-8 md:w-12 md:h-12" name="simple-icons:astro" />
     </div>
   </div>
 </template>

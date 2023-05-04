@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons'
+import typography from '@tailwindcss/typography'
 
 export default <Partial<Config>> {
   theme: {
@@ -13,17 +14,6 @@ export default <Partial<Config>> {
   },
   darkMode: 'class',
   plugins: [
-    require('@tailwindcss/typography'),
-    // https://github.com/egoist/tailwindcss-icons
-    iconsPlugin({
-      // Icons collection to use, see https://icones.js.org
-      collections: getIconCollections([
-        'bx',
-        'simple-icons',
-        'uil',
-        // 'heroicons',
-        // 'ph'
-      ]),
-    })
+    typography
   ]
 }

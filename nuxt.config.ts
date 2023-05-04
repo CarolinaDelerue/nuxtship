@@ -12,7 +12,9 @@ export default defineNuxtConfig({
     // https://vueuse.org/
     '@vueuse/nuxt',
     // https://nuxt.studio
-    '@nuxthq/studio'
+    '@nuxthq/studio',
+    // https://github.com/nuxt-modules/icon
+    'nuxt-icon'
   ],
   devtools: {
     enabled: true

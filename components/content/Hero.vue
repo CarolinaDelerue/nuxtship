@@ -15,13 +15,13 @@
                     target="_blank"
                     class="flex gap-1 items-center justify-center"
                     rel="noopener">
-                    <span class="h-5 w-5 text-white i-bx-bxs-cloud-download"></span>
+                    <Icon class="h-5 w-5 text-white" name="download" />
                     Download for Free
                 </AppLink>
                 <AppLink sizes="lg" rel="noopener" to="https://github.com/surjithctly/astroship"
                     class="flex gap-1 items-center justify-center "
                     target="_blank">
-                    <span class="h-5 w-5 text-white i-bx-bxl-github"></span>
+                    <Icon class="h-5 w-5 text-white" name="github" />
                     GitHub Repo
                 </AppLink>
             </div>

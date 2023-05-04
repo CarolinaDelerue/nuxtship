@@ -9,15 +9,15 @@
       </p>
       <div class="mt-5">
         <div class="flex items-center mt-2 space-x-2 text-gray-600">
-          <span class="text-gray-400 w-4 h-4 i-uil-map-marker"> </span>
+          <span class="text-gray-400 w-4 h-4 uil:map-marker"> </span>
           <span>1734 Sanfransico, CA 93063</span>
         </div>
         <div class="flex items-center mt-2 space-x-2 text-gray-600">
-          <span class="text-gray-400 w-4 h-4 i-uil-envelope"> </span>
+          <span class="text-gray-400 w-4 h-4 uil:envelope"> </span>
           <NuxtLink to="delerue.carolina@gmail.com"> delerue.carolina@gmail.com </NuxtLink>
         </div>
         <div class="flex items-center mt-2 space-x-2 text-gray-600">
-          <span class="text-gray-400 w-4 h-4 i-uil-phone"> </span>
+          <span class="text-gray-400 w-4 h-4 uil:phone"> </span>
           <NuxtLink to="tel:+1 (987) 4587 899"> +1 (987) 4587 899 </NuxtLink>
         </div>
       </div>
