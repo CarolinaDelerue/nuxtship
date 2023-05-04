@@ -20,7 +20,9 @@ export default defineNuxtConfig({
     enabled: true
   },
   content: {
-    documentDriven: true
+    documentDriven: {
+      surround: false
+    }
   },
   colorMode: {
     classSuffix: ''
