@@ -14,6 +14,12 @@ Astro comes batteries included. It takes the best parts of state-of-the-art tool
 ::logos
 #title
 Works with your technologies
+#default
+:icon{name="simple-icons:vuejs"}
+:icon{name="simple-icons:nuxtdotjs"}
+:icon{name="simple-icons:markdown"}
+:icon{name="simple-icons:typescript"}
+![test](/assets/hero.png)
 ::
 ::cta
 #title
