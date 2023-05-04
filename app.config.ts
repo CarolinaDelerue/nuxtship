@@ -5,5 +5,8 @@ export default defineAppConfig({
       github: 'bx:bxl-github',
       download: 'bx:bxs-cloud-download'
     }
+  },
+  nuxtShip: {
+    copyright: 'NuxtShip'
   }
 })
