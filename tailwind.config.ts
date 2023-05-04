@@ -13,6 +13,7 @@ export default <Partial<Config>> {
   },
   darkMode: 'class',
   plugins: [
+    require('@tailwindcss/typography'),
     // https://github.com/egoist/tailwindcss-icons
     iconsPlugin({
       // Icons collection to use, see https://icones.js.org
