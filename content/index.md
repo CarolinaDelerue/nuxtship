@@ -1,9 +1,23 @@
 
 ::hero
+#title
+Marketing website done with Astro
+#description
+Astroship is a starter template for startups, marketing websites & landing pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create any website with this starter.
 ::
 ::features
+#title
+Everything you need to start a website
+#description
+Astro comes batteries included. It takes the best parts of state-of-the-art tools and adds its own innovations.
 ::
 ::logos
+#title
+Works with your technologies
 ::
 ::cta
+#title
+Build faster websites.
+#description
+Pull content from anywhere and serve it fast with Astro's next-gen island architecture.
 ::

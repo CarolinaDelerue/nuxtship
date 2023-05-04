@@ -5,12 +5,10 @@
         </div>
         <div>
             <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-                Marketing website done with Astro
+              <ContentSlot :use="$slots.title" unwrap="p" />
             </h1>
             <p class="text-lg mt-4 text-slate-600 max-w-xl">
-                Astroship is a starter template for startups, marketing websites & landing
-                pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-              any website with this starter.
+              <ContentSlot :use="$slots.description" unwrap="p" />
             </p>
             <div class="mt-6 flex flex-col sm:flex-row gap-3">
                 <AppLink to="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
@@ -18,7 +16,6 @@
                     class="flex gap-1 items-center justify-center"
                     rel="noopener">
                     <span class="h-5 w-5 text-white i-bx-bxs-cloud-download"></span>
-
                     Download for Free
                 </AppLink>
                 <AppLink sizes="lg" rel="noopener" to="https://github.com/surjithctly/astroship"
