@@ -50,11 +50,9 @@ const menuitems = [
       </div>
     </nav>
     <div>
-      <!-- TODO
-      probleme with button -->
       <div class="hidden lg:flex items-center justify-end gap-4">
-        <AppLink to="#" variants="inverted" class="text-right">Log in</AppLink>
-        <AppLink to="#" size="md" block >Sign up</AppLink>
+        <AppLink to="/" variants="inverted" class="text-right">Log in</AppLink>
+        <AppLink to="/" size="md" >Sign up</AppLink>
       </div>
     </div>
   </header>

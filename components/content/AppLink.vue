@@ -13,7 +13,7 @@ const props = defineProps({
     },
     block: {
         type: Boolean,
-        default: true
+        default: false
     },
     variants: {
         type: String as PropType<'outline' | 'primary' | 'inverted' | 'muted'>,

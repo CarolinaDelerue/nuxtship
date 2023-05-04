@@ -82,10 +82,7 @@ const pricing = [
                 </li>
             </ul>
             <div class="flex mt-8">
-              <!-- TODO
-              white button -->
-                <AppLink :to="item.button.link" block >{{ item.button.text }}
-                </AppLink>
+                <AppLink :to="item.button.link" block :variants="item.popular ? 'primary' : 'outline'" >{{ item.button.text }}</AppLink>
             </div>
         </div>
     </div>

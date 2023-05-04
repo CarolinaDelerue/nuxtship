@@ -1,13 +1,14 @@
 <script setup lang="ts">
 
 const publishedBlogEntries = await queryContent('blog').find()
-const blogList = publishedBlogEntries.filter(page => page._path !== '/blog')
 
-//TODO
-// publishedBlogEntries.sort(function (a, b) {
-//   return b.page.publishDate.valueOf() - a.page.publishDate.valueOf();
-// });
-
+const blogList = publishedBlogEntries
+  .filter(page => page._path !== '/blog')
+  .sort((a, b) => {
+    const dateA = new Date(a.publishDate).getTime();
+    const dateB = new Date(b.publishDate).getTime();
+    return dateB - dateA;
+  });
 </script>
 
 <template>
@@ -36,7 +37,7 @@ const blogList = publishedBlogEntries.filter(page => page._path !== '/blog')
                       <span class="text-gray-400">• </span>
                       <time
                         class="text-gray-400"
-                        datetime={{ blogPostEntry.publishDate }}>
+                       :datetime="blogPostEntry.publishDate">
                         {{ blogPostEntry.publishDate }}
                       </time>
                     </div>
