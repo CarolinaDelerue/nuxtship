@@ -4,5 +4,92 @@ Pricing
 #description
 Simple & Predictable pricing. No Surprises
 ::
-::app-pricing
+::pricing-list
+  ::pricing-card
+  #category
+  Personal
+  #price
+  Free
+  #list
+    ::check-list
+    ---
+    items:
+    - Lifetime free
+    - Up to 3 users
+    - Unlimited Pages
+    - Astro Sub domain
+    - Basic Integrations
+    - Community Support
+    ---
+    ::
+
+  #button
+    ::app-link
+    ---
+    to: "/"
+    variants: 'outline'
+    label: 'Get started'
+    size: 'lg'
+    classLink: 'text-xs font-light w-full text-white '
+    ---
+    ::
+  ::
+  ::pricing-card
+  #category
+  Startup
+  #price
+  $19
+  #list
+    ::check-list
+    ---
+    items:
+    - All Free Features
+    - Up to 20 users
+    - 20 Custom domains
+    - Unlimited Collaborators
+    - Advanced Integrations
+    - Priority Support
+    ---
+    ::
+
+  #button
+    ::app-link
+    ---
+    to: "/"
+    variants: 'primary'
+    label: 'Get started'
+    size: 'lg'
+    classLink: 'text-xs font-light w-full text-white '
+    ---
+    ::
+  ::
+  ::pricing-card
+  #category
+  Enterprise
+  #price
+  Custom
+  #list
+    ::check-list
+    ---
+    items:
+    - All Pro Features,
+    - Unlimited Custom domains,
+    - 99.99% Uptime SLA,
+    - SAML & SSO Integration,
+    - Dedicated Account Manager,
+    - 24/7 Phone Support,
+    ---
+    ::
+
+  #button
+    ::app-link
+    ---
+    to: "/"
+    variants: 'outline'
+    label: 'Get started'
+    size: 'lg'
+    classLink: 'text-xs font-light w-full text-white '
+    ---
+    ::
+  ::
 ::
