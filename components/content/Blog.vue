@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: publishedBlogEntries } = await useAsyncData('blog', () => queryContent('blog').find())
+const { data: publishedBlogEntries } = await useAsyncData('blog', () => queryContent('blog').where({_partial: true}).find())
 
 const blogList = publishedBlogEntries.value!
   .filter(page => page._path !== '/blog')

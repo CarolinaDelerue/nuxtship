@@ -1,33 +1,10 @@
 <script setup lang="ts">
 
-const menuitems = [
-  {
-    title: 'Features',
-    path: '/',
-    // children: [
-    //   { title: "Action", path: "/" },
-    //   { title: "Another action", path: "#" },
-    //   { title: "Dropdown Submenu", path: "#" },
-    //   { title: "404 Page", path: "/404" },
-  },
-  {
-    title: 'Pricing',
-    path: '/pricing',
-  },
-  {
-    title: 'About',
-    path: '/about',
-  },
-  {
-    title: 'Blog',
-    path: '/blog',
-  },
-  {
-    title: 'Contact',
-    path: '/contact',
-  },
-]
+const { navigation } = useContent()
 
+if (!navigation.value) {
+  navigation.value = await fetchContentNavigation()
+}
 </script>
 
 <template>
@@ -47,11 +24,11 @@ const menuitems = [
       <div class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
         <ul class="flex flex-col lg:flex-row lg:gap-3">
           <li
-            v-for="(item, index) in menuitems"
+            v-for="(item, index) in navigation"
             :key="index"
           >
             <NuxtLink
-              :to="item.path"
+              :to="item._path"
               class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
             >
               {{ item.title }}

@@ -1,3 +1,7 @@
+---
+title: Blog
+---
+
 ::section-head
 #title
 Our Blog

@@ -1,3 +1,7 @@
+---
+title: Contact
+---
+
 ::section-head
 #title
 Contact

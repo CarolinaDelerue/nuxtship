@@ -1,3 +1,7 @@
+---
+title: About
+---
+
 ::section-head
 #title
 About

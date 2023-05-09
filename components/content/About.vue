@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const publishedTeamMembers = await queryContent('about', 'team').find()
+const publishedTeamMembers = await queryContent('about').where({_partial: true}).find()
 
 </script>
 
