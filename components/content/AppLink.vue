@@ -12,7 +12,7 @@ const props = defineProps({
     default: null
   },
   size: {
-    type: String as PropType<'md' | 'lg'>,
+    type: String as PropType<'md' | 'lg' | 'none'>,
     default: 'lg'
   },
   block: {
@@ -42,6 +42,7 @@ const sizes = computed(() => {
   return ({
     md: 'px-4 py-2 text-sm',
     lg: 'px-5 py-2.5 text-md',
+    none: 'px-0 py-0 text-md',
   })[props.size]
 })
 
