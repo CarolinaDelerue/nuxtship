@@ -40,8 +40,8 @@ const variants = computed(() => {
 
 const sizes = computed(() => {
   return ({
-    md: 'px-4 py-2',
-    lg: 'px-5 py-2.5',
+    md: 'px-4 py-2 text-sm',
+    lg: 'px-5 py-2.5 text-md',
   })[props.size]
 })
 
@@ -51,7 +51,7 @@ const linkClass = computed(() => {
     sizes.value,
     variants.value,
     props.block && 'w-full',
-    props.classLink
+    props.classLink,
   )
 })
 </script>
@@ -60,8 +60,8 @@ const linkClass = computed(() => {
   <NuxtLink
     :to="to"
     :class="linkClass"
-    :label="label"
   >
+    {{ label }}
     <slot />
   </NuxtLink>
 </template>

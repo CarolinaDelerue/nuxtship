@@ -30,7 +30,7 @@ Simple & Predictable pricing. No Surprises
     variants: 'outline'
     label: 'Get started'
     size: 'lg'
-    classLink: 'text-xs font-light w-full text-white '
+    classLink: 'font-light w-full '
     ---
     ::
   ::
@@ -59,7 +59,7 @@ Simple & Predictable pricing. No Surprises
     variants: 'primary'
     label: 'Get started'
     size: 'lg'
-    classLink: 'text-xs font-light w-full text-white '
+    classLink: 'font-light w-full text-white '
     ---
     ::
   ::
@@ -86,9 +86,9 @@ Simple & Predictable pricing. No Surprises
     ---
     to: "/"
     variants: 'outline'
-    label: 'Get started'
+    label: 'Get started t'
     size: 'lg'
-    classLink: 'text-xs font-light w-full text-white '
+    classLink: 'font-light w-full'
     ---
     ::
   ::
