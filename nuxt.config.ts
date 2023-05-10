@@ -28,6 +28,6 @@ export default defineNuxtConfig({
     classSuffix: ''
   },
   image: {
-    domains: ['unsplash.com']
+    domains: ['images.unsplash.com']
   }
 })
