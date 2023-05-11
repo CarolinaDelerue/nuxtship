@@ -23,6 +23,8 @@ const blogList = publishedBlogEntries.value!
               <NuxtImg
                 :src="blogPostEntry.image.src"
                 :alt="blogPostEntry.image.alt"
+                width="430"
+                height="240"
               />
               <div>
                 <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">

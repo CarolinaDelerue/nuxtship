@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
 const { navigation } = useContent()
+const appConfig = useAppConfig()
 
 if (!navigation.value) {
   navigation.value = await fetchContentNavigation()
@@ -13,9 +14,12 @@ if (!navigation.value) {
       href="/"
       class="text-lg lg:w-48"
     >
-      <span class="font-bold text-slate-800">Astro</span><span
-        class="text-slate-500"
-      >ship</span>
+      <NuxtImg
+        :src="appConfig.header.logo"
+        alt="Your logo"
+        width="40"
+        height="40"
+      />
     </NuxtLink>
     <div class="lg:hidden flex w-full justify-end">
       <MenuIcon class="h-4 w-4 text-gray-800" />

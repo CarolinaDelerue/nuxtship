@@ -1,11 +1,14 @@
 <template>
   <main class="container grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
     <div class="py-6 md:order-1 hidden md:block">
-      <img
+      <NuxtImg
         src="/assets/hero.png"
         alt="Astronaut in the air"
-        class="w-full h-full"
+        width="520"
+        height="424"
       >
+        />
+      </nuxtimg>
     </div>
     <div>
       <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">

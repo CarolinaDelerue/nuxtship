@@ -1,7 +1,6 @@
 <script setup lang="ts">
 
-const publishedTeamMembers = await queryContent('about').where({_partial: true}).find()
-
+const { data: publishedTeamMembers } = await useAsyncData('about', () => queryContent('about').where({_partial: true}).find())
 </script>
 
 <template>
@@ -30,6 +29,8 @@ const publishedTeamMembers = await queryContent('about').where({_partial: true})
             :src="teamMemberEntry.avatar.src"
             :alt="teamMemberEntry.avatar.alt"
             class="aspect-square object-cover"
+            width="272"
+            height="272"
           />
         </div>
         <div class="mt-4 text-center">
