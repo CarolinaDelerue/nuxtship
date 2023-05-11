@@ -57,27 +57,10 @@ const items = [
       </p>
     </div>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-      <div
-        v-for="item in items"
-        :key="item.title"
-      >
-        <div class="flex gap-4 items-start">
-          <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
-            <Icon
-              class="text-white"
-              :name="item.icon"
-            />
-          </div>
-          <div>
-            <h3 class="font-semibold text-lg">
-              {{ item.title }}
-            </h3>
-            <p class="text-slate-500 mt-2 leading-relaxed">
-              {{ item.description }}
-            </p>
-          </div>
-        </div>
-      </div>
+      <ContentSlot
+        :use="$slots.extra"
+        unwrap="p"
+      />
     </div>
   </div>
 </template>

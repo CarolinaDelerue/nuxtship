@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps({
+defineProps({
   items: {
     type: Array as PropType<Array<String>>,
     required: true
