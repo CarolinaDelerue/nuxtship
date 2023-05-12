@@ -1,3 +1,11 @@
+<script setup lang="ts">
+defineProps({
+  icon: {
+    type: String,
+    default: ''
+  }
+})
+</script>
 <template>
   <main class="container grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
     <div class="py-6 md:order-1 hidden md:block">
@@ -26,31 +34,11 @@
         </ContentSlot>
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
-        <AppLink
-          to="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-          target="_blank"
-          class="flex gap-1 items-center justify-center"
-          rel="noopener"
-        >
-          <Icon
-            class="h-5 w-5 text-white"
-            name="download"
-          />
-          Download for Free
-        </AppLink>
-        <AppLink
-          sizes="lg"
-          rel="noopener"
-          to="https://github.com/surjithctly/astroship"
-          class="flex gap-1 items-center justify-center "
-          target="_blank"
-        >
-          <Icon
-            class="h-5 w-5 text-white"
-            name="github"
-          />
-          GitHub Repo
-        </AppLink>
+        <ContentSlot
+          v-if="$slots.extra"
+          :use="$slots.extra"
+          unwrap="p"
+        />
       </div>
     </div>
   </main>

@@ -1,7 +1,16 @@
 <script setup lang="ts">
+import type { RouteLocationNormalized, RouteLocationRaw } from 'vue-router'
 import { classNames } from '../../utils'
 
 const props = defineProps({
+  label: {
+    type: String,
+    default: ''
+  },
+  to: {
+    type: [String, Object] as PropType<string | RouteLocationNormalized | RouteLocationRaw>,
+    default: null
+  },
     size: {
         type: String as PropType<'md' | 'lg'>,
         default: 'md'
@@ -46,7 +55,7 @@ const linkClass = computed(() => {
 </script>
 
 <template>
-<button :class="linkClass"
-  ><slot />
-</button>
+  <button :class="linkClass">
+    <slot />
+  </button>
 </template>

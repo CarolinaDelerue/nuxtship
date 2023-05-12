@@ -11,6 +11,10 @@ const props = defineProps({
     type: [String, Object] as PropType<string | RouteLocationNormalized | RouteLocationRaw>,
     default: null
   },
+  target: {
+    type: String,
+    default: ''
+  },
   size: {
     type: String as PropType<'md' | 'lg' | 'none'>,
     default: 'lg'
@@ -24,6 +28,10 @@ const props = defineProps({
     default: 'primary'
   },
   classLink: {
+    type: String,
+    default: ''
+  },
+  icon: {
     type: String,
     default: ''
   }
@@ -55,14 +63,28 @@ const linkClass = computed(() => {
     props.classLink,
   )
 })
+
+const appLinkProps = computed(() => {
+  if (props.to) {
+    return { to: props.to, target: props.target }
+  }
+})
 </script>
 
 <template>
   <NuxtLink
+    v-bind="appLinkProps"
     :to="to"
     :class="linkClass"
   >
-    {{ label }}
+    <div class="flex flex-row gap-x-1 items-center justify-center">
+      <Icon
+        v-if="icon"
+        class="h-5 w-5"
+        :name="icon"
+      />
+      {{ label }}
+    </div>
     <slot />
   </NuxtLink>
 </template>
