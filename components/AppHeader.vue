@@ -25,9 +25,9 @@
           class="h-4 w-4 text-gray-800 cursor-pointer"
           @click="isMenuOpen = !isMenuOpen"
         />
-        <Icon
+        <UIcon
           v-else
-          name="heroicons:x-mark-solid"
+          name="i-heroicons-x-mark-solid"
           size="20px"
           @click="isMenuOpen = !isMenuOpen"
         />

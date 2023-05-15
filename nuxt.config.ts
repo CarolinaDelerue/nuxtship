@@ -5,16 +5,11 @@ export default defineNuxtConfig({
     '@nuxt/content',
     // https://v1.image.nuxtjs.org
     '@nuxt/image-edge',
-    // https://color-mode.nuxtjs.org
-    '@nuxtjs/color-mode',
     // https://tailwindcss.nuxtjs.org
-    '@nuxtjs/tailwindcss',
-    // https://vueuse.org/
     '@vueuse/nuxt',
     // https://nuxt.studio
     '@nuxthq/studio',
-    // https://github.com/nuxt-modules/icon
-    'nuxt-icon'
+    '@nuxthq/ui'
   ],
   devtools: {
     enabled: true
@@ -28,8 +23,9 @@ export default defineNuxtConfig({
     classSuffix: ''
   },
   image: {
-    domains: ['images.unsplash.com'],
-    /* explicitly set ipx due to https://github.com/nuxt/image/issues/757 */
-    provider: 'ipx'
+    domains: ['images.unsplash.com']
+  },
+  ui: {
+    icons: ['simple-icons']
   }
 })

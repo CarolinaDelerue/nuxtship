@@ -16,9 +16,9 @@
       </p>
       <div class="mt-5">
         <div class="flex items-center mt-2 space-x-2 text-gray-600">
-          <Icon
+          <UIcon
             class="text-gray-400 w-4 h-4"
-            name="uil:map-marker"
+            name="i-uil-map-marker"
           />
           <p class="text-lg justify leading-relaxed text-slate-500">
             <ContentSlot
@@ -28,9 +28,9 @@
           </p>
         </div>
         <div class="flex items-center mt-2 space-x-2 text-gray-600">
-          <Icon
+          <UIcon
             class="text-gray-400 w-4 h-4"
-            name="uil:envelope"
+            name="i-uil-envelope"
           />
           <ContentSlot
             v-if="$slots.mail"
@@ -39,9 +39,9 @@
           />
         </div>
         <div class="flex items-center mt-2 space-x-2 text-gray-600">
-          <Icon
+          <UIcon
             class="text-gray-400 w-4 h-4"
-            name="uil:phone"
+            name="i-uil-phone"
           />
           <ContentSlot
             v-if="$slots.contact"

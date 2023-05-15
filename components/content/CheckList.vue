@@ -17,8 +17,8 @@ defineProps({
       class="flex items-start gap-3 text-gray-800"
     >
       <div>
-        <Icon
-          name="heroicons-solid:check-circle"
+        <UIcon
+          name="i-heroicons-solid-check-circle"
           class="w-6 h-6"
           alt=""
         />

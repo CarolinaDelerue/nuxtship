@@ -10,7 +10,7 @@ defineProps({
 <template>
   <div class="flex gap-4 items-start">
     <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
-      <Icon
+      <UIcon
         class="text-white"
         :name="icon"
       />
