@@ -25,5 +25,22 @@ defineProps({
         </li>
       </ul>
     </nav>
+    <div class="flex items-center justify-center gap-4">
+      <AppLink
+        to="/"
+        size="md"
+        variants="muted"
+        class="w-full"
+      >
+        Log in
+      </AppLink>
+      <AppLink
+        to="/"
+        size="md"
+        class="w-full"
+      >
+        Sign up
+      </AppLink>
+    </div>
   </div>
 </template>

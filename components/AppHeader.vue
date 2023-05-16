@@ -1,7 +1,6 @@
 <script setup lang="ts">
   const { navigation } = useContent()
   const appConfig = useAppConfig()
-
   const isMenuOpen = ref(false)
 </script>
 
@@ -20,8 +19,9 @@
         />
       </NuxtLink>
       <div class="lg:hidden flex w-full justify-end">
-        <MenuIcon
+        <UIcon
           v-if="!isMenuOpen"
+          name="i-heroicons-bars-3-solid"
           class="h-4 w-4 text-gray-800 cursor-pointer"
           @click="isMenuOpen = !isMenuOpen"
         />
@@ -33,7 +33,7 @@
         />
       </div>
       <nav
-        class="nuxtnav-toggle lg:block"
+        class="lg:block"
         :class="{'hidden': !isMenuOpen}"
       >
         <div class="w-full lg:w-auto mt-2 lg:flex lg:mt-0">
@@ -41,8 +41,23 @@
             <li
               v-for="(item, index) in navigation"
               :key="index"
+              class="text-lg"
             >
+              <UDropdown
+                v-if="item.dropdown"
+                :items="[item.dropdown.items]"
+                :popper="{ placement: 'bottom-start' }"
+              >
+                <UButton
+                  color="white"
+                  class="text-lg"
+                  variant="ghost"
+                  :label="item.dropdown.title"
+                  trailing-icon="i-heroicons-chevron-down-20-solid"
+                />
+              </UDropdown>
               <NuxtLink
+                v-else
                 :to="item._path"
                 class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
                 @click="isMenuOpen = false"

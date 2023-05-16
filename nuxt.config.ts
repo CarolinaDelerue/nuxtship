@@ -19,13 +19,10 @@ export default defineNuxtConfig({
       surround: false
     }
   },
-  colorMode: {
-    classSuffix: ''
-  },
   image: {
     domains: ['images.unsplash.com']
   },
   ui: {
-    icons: ['simple-icons']
+    icons: ['simple-icons', 'bx', 'heroicons', 'uil']
   }
 })
