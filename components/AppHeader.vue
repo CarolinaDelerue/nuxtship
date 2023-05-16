@@ -3,10 +3,6 @@
   const appConfig = useAppConfig()
 
   const isMenuOpen = ref(false)
-
-  if (!navigation.value) {
-    navigation.value = await fetchContentNavigation()
-  }
 </script>
 
 <template>
