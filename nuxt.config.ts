@@ -28,6 +28,8 @@ export default defineNuxtConfig({
     classSuffix: ''
   },
   image: {
-    domains: ['images.unsplash.com']
+    domains: ['images.unsplash.com'],
+    /* explicitly set ipx due to https://github.com/nuxt/image/issues/757 */
+    provider: 'ipx'
   }
 })
