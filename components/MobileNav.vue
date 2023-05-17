@@ -16,7 +16,22 @@ defineProps({
           v-for="(item, index) in navigation"
           :key="index"
         >
+          <UDropdown
+            v-if="item.dropdown"
+            :items="[item.dropdown.items]"
+            :popper="{ placement: 'bottom-start' }"
+          >
+            <UButton
+              color="gray"
+              size="lg"
+              class="text-md px-0 font-normal text-gray-600"
+              variant="link"
+              :label="item.dropdown.title"
+              trailing-icon="i-heroicons-chevron-down-20-solid"
+            />
+          </UDropdown>
           <NuxtLink
+            v-else
             :to="item._path"
             class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
           >
