@@ -37,11 +37,11 @@
         :class="{'hidden': !isMenuOpen}"
       >
         <div class="w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-          <ul class="hidden lg:flex flex-col lg:flex-row lg:gap-3">
+          <ul class="hidden items-center lg:flex flex-col lg:flex-row lg:gap-3">
             <li
               v-for="(item, index) in navigation"
               :key="index"
-              class="text-lg"
+              class="text-lg text-gray-600"
             >
               <UDropdown
                 v-if="item.dropdown"
@@ -49,9 +49,10 @@
                 :popper="{ placement: 'bottom-start' }"
               >
                 <UButton
-                  color="white"
-                  class="text-lg"
-                  variant="ghost"
+                  color="gray"
+                  size="lg"
+                  class="text-lg font-normal text-gray-600"
+                  variant="link"
                   :label="item.dropdown.title"
                   trailing-icon="i-heroicons-chevron-down-20-solid"
                 />
