@@ -24,7 +24,7 @@ defineProps({
             <UButton
               color="gray"
               size="lg"
-              class="text-md px-0 font-normal text-gray-600"
+              class="-ml-4 text-md font-normal text-gray-600"
               variant="link"
               :label="item.dropdown.title"
               trailing-icon="i-heroicons-chevron-down-20-solid"
