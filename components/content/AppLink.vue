@@ -78,7 +78,7 @@ const appLinkProps = computed(() => {
     :class="linkClass"
   >
     <div class="flex flex-row gap-x-1 items-center justify-center">
-      <Icon
+      <UIcon
         v-if="icon"
         class="h-5 w-5"
         :name="icon"

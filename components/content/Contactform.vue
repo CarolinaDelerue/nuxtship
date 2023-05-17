@@ -6,95 +6,82 @@
     class="needs-validation"
     novalidate
   >
-    <input
+    <UInput
       type="hidden"
       name="access_key"
       value="YOUR_ACCESS_KEY_HERE"
     >
-    <input
-      type="checkbox"
-      class="hidden"
-      style="display:none"
-      name="botcheck"
-    >
-    <div class="mb-5">
       <input
-        type="text"
-        placeholder="Full Name"
-        required
-        class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
-        name="name"
+        type="checkbox"
+        class="hidden"
+        style="display:none"
+        name="botcheck"
       >
-      <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-        Please provide your full name.
+      <div class="mb-5">
+        <UInput
+          type="text"
+          appearance="none"
+          placeholder="Full Name"
+          required
+          class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+          name="name"
+        >
+          <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+            Please provide your full name.
+          </div>
+        </UInput>
       </div>
-    </div>
-    <div class="mb-5">
-      <label
-        for="email_address"
-        class="sr-only"
-      >Email Address</label><input
-        id="email_address"
-        type="email"
-        placeholder="Email Address"
-        name="email"
-        required
-        class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+      <div class="mb-5">
+        <label
+          for="email_address"
+          class="sr-only"
+        >Email Address</label><UInput
+          id="email_address"
+          appearance="none"
+          type="email"
+          placeholder="Email Address"
+          name="email"
+          required
+          class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        >
+          <div class="empty-feedback text-red-400 text-sm mt-1">
+            Please provide your email address.
+          </div>
+          <div class="invalid-feedback text-red-400 text-sm mt-1">
+            Please provide a valid email address.
+          </div>
+        </uinput>
+      </div>
+      <div class="mb-3">
+        <UTextarea
+          name="message"
+          appearance="none"
+          required
+          placeholder="Your Message"
+          class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        />
+        <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+          Please enter your message.
+        </div>
+      </div>
+      <UButton
+        type="submit"
+        size="lg"
+        block
+        color="black"
       >
-      <div class="empty-feedback text-red-400 text-sm mt-1">
-        Please provide your email address.
-      </div>
-      <div class="invalid-feedback text-red-400 text-sm mt-1">
-        Please provide a valid email address.
-      </div>
-    </div>
-    <div class="mb-3">
-      <textarea
-        name="message"
-        required
-        placeholder="Your Message"
-        class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+        Send Message
+      </UButton>
+      <div
+        ref="result"
+        class="mt-3 text-center"
       />
-      <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-        Please enter your message.
-      </div>
-    </div>
-    <AppButton
-      type="submit"
-      size="lg"
-      block
-    >
-      Send Message
-    </AppButton>
-    <div
-      ref="result"
-      class="mt-3 text-center"
-    />
+    </UInput>
   </form>
 </template>
 
 
 <script setup lang="ts">
-// const { $toast } = useNuxtApp()
-
-// const email = ref('')
-// const loading = ref(false)
-
-// function onSubmit () {
-//   if (loading.value) { return }
-//   loading.value = true
-
-//   $fetch('https://api.web3forms.com/submit', {
-//     method: 'POST',
-//     body: { email: email.value }
-//   }).then(() => {
-//   }).catch((err) => {
-//     const description = err.data?.message || 'Something went wrong. Please try again later.'
-//     $toast.error({ title: 'Subscription failed', description })
-//   }).finally(() => {
-//     loading.value = false
-//   })
-// }
 
 const form: any = ref()
 const result: any = ref()

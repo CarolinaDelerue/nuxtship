@@ -14,7 +14,7 @@ const appConfig = useAppConfig()
         rel="noopener"
         class="hover:underline"
       >
-        AstroShip template
+        NuxtShip template
       </a>
     </p>
   </footer>
