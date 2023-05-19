@@ -9,13 +9,17 @@ const { data: publishedTeamMembers } = await useAsyncData('about', () => queryCo
       <ContentSlot
         :use="$slots.title"
         unwrap="p"
-      />
+      >
+        Missing Title
+      </ContentSlot>
     </h2>
     <p class="text-lg leading-relaxed text-slate-500">
       <ContentSlot
         :use="$slots.description"
         unwrap="p"
-      />
+      >
+        Missing #description slot
+      </ContentSlot>
     </p>
   </div>
   <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">

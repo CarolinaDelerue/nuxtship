@@ -9,13 +9,17 @@
         <ContentSlot
           :use="$slots.category"
           unwrap="p"
-        />
+        >
+          Missing Category
+        </ContentSlot>
       </p>
       <p class="mt-3 text-4xl font-bold text-black md:text-4xl">
         <ContentSlot
           :use="$slots.price"
           unwrap="p"
-        />
+        >
+          Missing Price
+        </ContentSlot>
       </p>
     </div>
     <div>

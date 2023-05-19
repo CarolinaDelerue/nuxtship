@@ -5,17 +5,22 @@
         <ContentSlot
           :use="$slots.title"
           unwrap="p"
-        />
+        >
+          Missing Title
+        </ContentSlot>
       </h2>
       <p class="text-lg mt-4 text-slate-600">
         <ContentSlot
           :use="$slots.description"
           unwrap="p"
-        />
+        >
+          Missing #description slot
+        </ContentSlot>
       </p>
     </div>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
       <ContentSlot
+        v-if="$slots.extra"
         :use="$slots.extra"
         unwrap="p"
       />

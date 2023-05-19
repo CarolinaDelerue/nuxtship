@@ -6,13 +6,17 @@
         <ContentSlot
           :use="$slots.title"
           unwrap="p"
-        />
+        >
+          Missing Title
+        </ContentSlot>
       </h2>
       <p class="text-lg leading-relaxed text-slate-500 mt-3">
         <ContentSlot
           :use="$slots.description"
           unwrap="p"
-        />
+        >
+          Missing #description slot
+        </ContentSlot>
       </p>
       <div class="mt-5">
         <div class="flex items-center mt-2 space-x-2 text-gray-600">
@@ -22,6 +26,7 @@
           />
           <p class="text-lg justify leading-relaxed text-slate-500">
             <ContentSlot
+              v-if="$slots.address"
               :use="$slots.address"
               unwrap="p"
             />
@@ -33,10 +38,11 @@
             name="i-uil-envelope"
           />
           <ContentSlot
-            v-if="$slots.mail"
             :use="$slots.mail"
             unwrap="p"
-          />
+          >
+            Missing #mail slot
+          </ContentSlot>
         </div>
         <div class="flex items-center mt-2 space-x-2 text-gray-600">
           <UIcon

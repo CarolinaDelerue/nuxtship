@@ -18,7 +18,7 @@ defineProps({
     >
       <div>
         <UIcon
-          name="i-heroicons-solid-check-circle"
+          name="i-heroicons-check-circle-solid"
           class="w-6 h-6"
           alt=""
         />
