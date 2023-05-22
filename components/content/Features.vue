@@ -9,7 +9,7 @@
           Missing Title
         </ContentSlot>
       </h2>
-      <p class="text-lg mt-4 text-slate-600">
+      <p class="text-lg mt-4 text-slate-600 dark:text-slate-400">
         <ContentSlot
           :use="$slots.description"
           unwrap="p"

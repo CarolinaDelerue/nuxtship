@@ -25,7 +25,7 @@ defineProps({
           Missing Title
         </ContentSlot>
       </h1>
-      <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      <p class="text-lg mt-4 text-slate-600 dark:text-slate-400 max-w-xl">
         <ContentSlot
           :use="$slots.description"
           unwrap="p"

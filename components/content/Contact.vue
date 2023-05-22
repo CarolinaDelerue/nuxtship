@@ -2,7 +2,7 @@
 <template>
   <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
     <div>
-      <h2 class="font-medium text-2xl text-gray-800">
+      <h2 class="font-medium text-2xl text-gray-800 dark:text-gray-400">
         <ContentSlot
           :use="$slots.title"
           unwrap="p"
@@ -10,7 +10,7 @@
           Missing Title
         </ContentSlot>
       </h2>
-      <p class="text-lg leading-relaxed text-slate-500 mt-3">
+      <p class="text-lg leading-relaxed text-slate-500 dark:text-slate-300 mt-3">
         <ContentSlot
           :use="$slots.description"
           unwrap="p"
@@ -19,12 +19,12 @@
         </ContentSlot>
       </p>
       <div class="mt-5">
-        <div class="flex items-center mt-2 space-x-2 text-gray-600">
+        <div class="flex items-center mt-2 space-x-2 text-gray-600 dark:text-slate-400">
           <UIcon
             class="text-gray-400 w-4 h-4"
             name="i-uil-map-marker"
           />
-          <p class="text-lg justify leading-relaxed text-slate-500">
+          <p class="text-lg justify leading-relaxed text-slate-500 dark:text-slate-300">
             <ContentSlot
               v-if="$slots.address"
               :use="$slots.address"

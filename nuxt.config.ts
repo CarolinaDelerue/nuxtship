@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     // https://nuxt.studio
     '@nuxthq/studio',
-    '@nuxthq/ui'
+    '@nuxthq/ui',
   ],
   devtools: {
     enabled: true

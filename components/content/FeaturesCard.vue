@@ -22,7 +22,7 @@ defineProps({
           unwrap="p"
         />
       </h3>
-      <p class="text-slate-500 mt-2 leading-relaxed">
+      <p class="text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
         <ContentSlot
           :use="$slots.description"
           unwrap="p"

@@ -22,7 +22,7 @@
         <UIcon
           v-if="!isMenuOpen"
           name="i-heroicons-bars-3-solid"
-          class="h-4 w-4 text-gray-800 cursor-pointer"
+          class="h-4 w-4 text-gray-800 dark:text-gray-400 cursor-pointer"
           @click="isMenuOpen = !isMenuOpen"
         />
         <UIcon
@@ -60,7 +60,7 @@
               <NuxtLink
                 v-else
                 :to="item._path"
-                class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
+                class="flex lg:px-3 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900"
                 @click="isMenuOpen = false"
               >
                 {{ item.title }}
@@ -73,7 +73,7 @@
         <div class="hidden lg:flex items-center justify-end gap-4">
           <AppLink
             to="/"
-            variants="inverted"
+            variants="inverted dark:muted"
             class="text-right"
           >
             Log in
