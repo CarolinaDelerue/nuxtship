@@ -15,6 +15,3 @@ export default <Partial<Config>> {
     typography
   ]
 }
-module.exports = {
-  darkMode: 'class'
-}

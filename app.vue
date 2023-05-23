@@ -29,7 +29,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="flex flex-col px-4">
+  <div class="flex flex-col px-4 mx-auto ">
     <AppHeader />
     <div>
       <NuxtPage />
