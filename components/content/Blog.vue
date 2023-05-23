@@ -14,7 +14,7 @@ const blogList = publishedBlogEntries.value!
   <main class="mt-16">
     <div class="grid gap-16 max-w-4xl mx-auto">
       <ul
-        v-for="(blogPostEntry, index) in blogList"
+        v-for="blogPostEntry in blogList"
         :key="blogPostEntry._id"
       >
         <li>

@@ -4,13 +4,17 @@
       <ContentSlot
         :use="$slots.title"
         unwrap="p"
-      />
+        >
+        Missing Title
+      </ContentSlot>
     </h1>
     <p class="text-lg mt-4 text-slate-600 dark:text-slate-400">
       <ContentSlot
         :use="$slots.description"
         unwrap="p"
-      />
+        >
+        Missing #description slot
+      </ContentSlot>
     </p>
   </div>
 </template>

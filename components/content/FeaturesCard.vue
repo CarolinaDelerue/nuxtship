@@ -20,13 +20,17 @@ defineProps({
         <ContentSlot
           :use="$slots.title"
           unwrap="p"
-        />
+          >
+        Missing Title
+      </ContentSlot>
       </h3>
       <p class="text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
         <ContentSlot
           :use="$slots.description"
           unwrap="p"
-        />
+          >
+        Missing #description slot
+      </ContentSlot>
       </p>
     </div>
   </div>

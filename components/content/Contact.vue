@@ -20,6 +20,7 @@
       <div class="mt-5">
         <div class="flex items-center mt-2 space-x-2 text-gray-600 dark:text-slate-400">
           <UIcon
+            v-if="$slots.address"
             class="text-gray-400 w-4 h-4"
             name="i-uil-map-marker"
           />
@@ -33,6 +34,7 @@
         </div>
         <div class="flex items-center mt-2 space-x-2 text-gray-600">
           <UIcon
+            v-if="$slots.mail"
             class="text-gray-400 w-4 h-4"
             name="i-uil-envelope"
           />
@@ -45,6 +47,7 @@
         </div>
         <div class="flex items-center mt-2 space-x-2 text-gray-600">
           <UIcon
+          v-if="$slots.contact"
             class="text-gray-400 w-4 h-4"
             name="i-uil-phone"
           />
