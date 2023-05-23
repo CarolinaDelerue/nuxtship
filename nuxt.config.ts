@@ -16,7 +16,8 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    domains: ['images.unsplash.com']
+    domains: ['images.unsplash.com'],
+    provider: 'ipx'
   },
   ui: {
     icons: ['simple-icons', 'bx', 'heroicons', 'uil']
