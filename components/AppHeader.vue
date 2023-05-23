@@ -7,7 +7,7 @@
 <template>
   <header class="flex flex-col">
     <div class="flex flex-row justify-between items-center my-5 container px-5">
-      <AppLink
+      <NuxtLink
         to="/"
         class="text-lg lg:w-48"
       >
@@ -17,7 +17,7 @@
           width="40"
           height="40"
         />
-      </AppLink>
+      </NuxtLink>
       <div 
         class="lg:hidden flex w-full justify-end"
         @click="isMenuOpen = !isMenuOpen"
@@ -58,14 +58,14 @@
                   trailing-icon="i-heroicons-chevron-down-20-solid"
                 />
               </UDropdown>
-              <AppLink
+              <NuxtLink
                 v-else
                 :to="item._path"
                 class="flex lg:px-3 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900"
                 @click="isMenuOpen = false"
               >
                 {{ item.title }}
-              </AppLink>
+              </NuxtLink>
             </li>
           </ul>
         </div>
