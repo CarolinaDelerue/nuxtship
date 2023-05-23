@@ -15,7 +15,7 @@ const blogList = publishedBlogEntries.value!
     <div class="grid gap-16 max-w-4xl mx-auto">
       <ul
         v-for="(blogPostEntry, index) in blogList"
-        :key="index"
+        :key="blogPostEntry._id"
       >
         <li>
           <NuxtLink :to="blogPostEntry._path">

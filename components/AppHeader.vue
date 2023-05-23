@@ -8,28 +8,29 @@
   <header class="flex flex-col">
     <div class="flex flex-row justify-between items-center my-5 container px-5">
       <NuxtLink
-        href="/"
+        to="/"
         class="text-lg lg:w-48"
       >
         <NuxtImg
           :src="appConfig.header.logo"
-          alt="Your logo"
+          alt="Company logo"
           width="40"
           height="40"
         />
       </NuxtLink>
-      <div class="lg:hidden flex w-full justify-end">
+      <div 
+        class="lg:hidden flex w-full justify-end"
+        @click="isMenuOpen = !isMenuOpen"
+      >
         <UIcon
           v-if="!isMenuOpen"
           name="i-heroicons-bars-3-solid"
           class="h-4 w-4 text-gray-800 dark:text-gray-400 cursor-pointer"
-          @click="isMenuOpen = !isMenuOpen"
         />
         <UIcon
           v-else
           name="i-heroicons-x-mark-solid"
           size="20px"
-          @click="isMenuOpen = !isMenuOpen"
         />
       </div>
       <nav
