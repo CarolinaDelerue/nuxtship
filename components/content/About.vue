@@ -5,7 +5,7 @@ const { data: publishedTeamMembers } = await useAsyncData('about', () => queryCo
 
 <template>
   <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-    <h2 class="font-bold text-3xl text-gray-800">
+    <h2 class="font-bold text-3xl text-gray-800 dark:text-gray-400">
       <ContentSlot
         :use="$slots.title"
         unwrap="p"
@@ -13,7 +13,7 @@ const { data: publishedTeamMembers } = await useAsyncData('about', () => queryCo
         Missing Title
       </ContentSlot>
     </h2>
-    <p class="text-lg leading-relaxed text-slate-500">
+    <p class="text-lg leading-relaxed text-slate-500 dark:text-slate-300">
       <ContentSlot
         :use="$slots.description"
         unwrap="p"

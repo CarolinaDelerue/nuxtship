@@ -33,7 +33,7 @@ defineProps({
           <NuxtLink
             v-else
             :to="item._path"
-            class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
+            class="flex lg:px-3 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900"
           >
             {{ item.title }}
           </NuxtLink>
@@ -44,7 +44,7 @@ defineProps({
       <AppLink
         to="/"
         size="md"
-        variants="muted"
+        variants="outline"
         class="w-full"
       >
         Log in

@@ -34,13 +34,13 @@ const { page } = useContent()
       </div>
     </div>
 
-    <div class="mx-auto prose prose-lg mt-6 max-w-3xl">
+    <div class="mx-auto prose prose-lg dark:prose-invert mt-6 max-w-3xl">
       <slot />
     </div>
     <div class="text-center mt-8">
       <NuxtLink
         to="/blog"
-        class="bg-gray-100 px-5 py-3 rounded-md hover:bg-gray-200 transition"
+        class="bg-gray-100 text-black px-5 py-3 rounded-md hover:bg-gray-200 transition"
       >
         ← Back to Blog
       </NuxtLink>
