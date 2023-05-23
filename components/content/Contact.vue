@@ -1,4 +1,3 @@
-
 <template>
   <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
     <div>

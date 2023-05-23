@@ -24,8 +24,8 @@ const { data: publishedTeamMembers } = await useAsyncData('about', () => queryCo
   </div>
   <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
     <div
-      v-for="(teamMemberEntry, index) in publishedTeamMembers"
-      :key="index"
+      v-for="teamMemberEntry in publishedTeamMembers"
+      :key="teamMemberEntry.title"
     >
       <div class="group">
         <div class="w-full">
