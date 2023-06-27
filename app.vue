@@ -19,6 +19,9 @@ useHead({
   ],
   htmlAttrs: {
     lang: 'en'
+  },
+  bodyAttrs: {
+    class: 'bg-white dark:bg-gray-950'
   }
 })
 
@@ -26,10 +29,11 @@ useSeoMeta({
   title: () => page.title,
   description,
 })
+
 </script>
 
 <template>
-  <div class="flex flex-col px-4 mx-auto ">
+  <div class="flex flex-col px-4 mx-auto">
     <AppHeader />
     <div>
       <NuxtPage />

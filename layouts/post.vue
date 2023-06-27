@@ -28,7 +28,7 @@ const { page } = useContent()
             v-for="(tag, index) in page.tags"
             :key="index"
           >
-            <span class="text-sm text-gray-500">#{{ tag }}</span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">#{{ tag }}</span>
           </div>
         </div>
       </div>

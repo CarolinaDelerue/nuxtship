@@ -22,7 +22,7 @@
     "@iconify-json/uil": "^1.1.4",
     "@nuxt/devtools": "^0.6.0",
     "@nuxt/eslint-config": "^0.1.1",
-    "@nuxthq/ui": "^2.4.0",
+    "@nuxthq/ui": "npm:@nuxthq/ui-edge@latest",
     "@tailwindcss/typography": "^0.5.9",
     "eslint": "^8.42.0",
     "install": "^0.13.0",

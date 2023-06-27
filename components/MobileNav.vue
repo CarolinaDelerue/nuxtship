@@ -9,9 +9,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="px-5 ">
+  <div>
     <nav>
-      <ul class="flex flex-col lg:flex-row justify-between my-5 text-red-600">
+      <ul class="flex flex-col lg:flex-row justify-between mt-1 mb-5 text-gray-600">
         <li
           v-for="(item, index) in navigation"
           :key="index"
@@ -22,9 +22,8 @@ defineProps({
             :popper="{ placement: 'bottom-start' }"
           >
             <UButton
-              color="gray"
-              size="lg"
-              class="-ml-4 text-md font-normal text-gray-600"
+              size="xl"
+              class="-ml-4 text-base font-normal text-gray-600 dark:text-gray-400"
               variant="link"
               :label="item.dropdown.title"
               trailing-icon="i-heroicons-chevron-down-20-solid"

@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-24">
-    <h2 class="text-center text-slate-500 dark:text-slate-300">
+    <h2 class="text-center text-gray-500 dark:text-gray-300">
       <ContentSlot
         :use="$slots.title"
         unwrap="p"

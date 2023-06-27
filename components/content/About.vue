@@ -5,7 +5,7 @@ const { data: publishedTeamMembers } = await useAsyncData('about', () => queryCo
 
 <template>
   <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-    <h2 class="font-bold text-3xl text-gray-800 dark:text-gray-400">
+    <h2 class="font-bold text-3xl text-gray-800 dark:text-gray-300">
       <ContentSlot
         :use="$slots.title"
         unwrap="p"
@@ -13,7 +13,7 @@ const { data: publishedTeamMembers } = await useAsyncData('about', () => queryCo
         Missing Title
       </ContentSlot>
     </h2>
-    <p class="text-lg leading-relaxed text-slate-500 dark:text-slate-300">
+    <p class="text-lg leading-relaxed text-gray-500 dark:text-gray-400">
       <ContentSlot
         :use="$slots.description"
         unwrap="p"
@@ -28,20 +28,20 @@ const { data: publishedTeamMembers } = await useAsyncData('about', () => queryCo
       :key="teamMemberEntry.title"
     >
       <div class="group">
-        <div class="w-full">
+        <div>
           <NuxtImg
             :src="teamMemberEntry.avatar.src"
             :alt="teamMemberEntry.avatar.alt"
-            class="aspect-square object-cover"
+            class="aspect-square object-cover w-full rounded-md"
             width="272"
             height="272"
           />
         </div>
         <div class="mt-4 text-center">
-          <h2 class="text-lg text-gray-800">
+          <h2 class="text-lg text-gray-800 dark:text-gray-300">
             {{ teamMemberEntry.name }}
           </h2>
-          <h3 class="text-sm text-slate-500">
+          <h3 class="text-sm text-gray-400">
             {{ teamMemberEntry.title }}
           </h3>
         </div>

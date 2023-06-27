@@ -6,7 +6,7 @@
 
 <template>
   <header class="flex flex-col">
-    <div class="flex flex-row justify-between items-center my-5 container px-5">
+    <div class="flex flex-row justify-between items-center my-5 container">
       <NuxtLink
         to="/"
         class="text-lg lg:w-48"
@@ -18,19 +18,19 @@
           height="40"
         />
       </NuxtLink>
-      <div 
+      <div
         class="lg:hidden flex w-full justify-end"
         @click="isMenuOpen = !isMenuOpen"
       >
         <UIcon
           v-if="!isMenuOpen"
           name="i-heroicons-bars-3-solid"
-          class="h-4 w-4 text-gray-800 dark:text-gray-400 cursor-pointer"
+          class="h-6 w-6 text-gray-800 dark:text-gray-400 cursor-pointer"
         />
         <UIcon
           v-else
           name="i-heroicons-x-mark-solid"
-          size="20px"
+          class="h-6 w-6"
         />
       </div>
       <nav
@@ -50,10 +50,9 @@
                 :popper="{ placement: 'bottom-start' }"
               >
                 <UButton
-                  color="gray"
-                  size="lg"
-                  class="text-lg font-normal text-gray-600"
-                  variant="link"
+                  size="xl"
+                  class="text-lg font-normal text-gray-600 dark:text-gray-300"
+                  variant="button"
                   :label="item.dropdown.title"
                   trailing-icon="i-heroicons-chevron-down-20-solid"
                 />
@@ -61,7 +60,7 @@
               <NuxtLink
                 v-else
                 :to="item._path"
-                class="flex lg:px-3 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900"
+                class="flex lg:px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
                 @click="isMenuOpen = false"
               >
                 {{ item.title }}
@@ -74,8 +73,9 @@
         <div class="hidden lg:flex items-center justify-end gap-4">
           <AppLink
             to="/"
-            variants="inverted dark:muted"
+            variants="outline"
             class="text-right"
+            size="md"
           >
             Log in
           </AppLink>

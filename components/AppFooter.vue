@@ -5,10 +5,10 @@ const appConfig = useAppConfig()
 <template>
   <footer class="my-20 w-full flex flex-col gap-3 justify-center">
     <div class="flex flex-col justify-center">
-      <p class="text-center text-sm text-slate-500 dark:text-gray-300">
+      <p class="text-center text-sm text-gray-500 dark:text-gray-300">
         Copyright ©  {{ new Date().getFullYear() }} {{ appConfig.nuxtShip?.copyright || 'Missing nuxtShip.copyright' }}. All rights reserved.
       </p>
-      <p class="text-center text-xs text-slate-500 dark:text-gray-300 mt-1">
+      <p class="text-center text-xs text-gray-500 dark:text-gray-300 mt-1">
         Inspired by the awesome <a
           href="https://astroship.web3templates.com"
           target="_blank"

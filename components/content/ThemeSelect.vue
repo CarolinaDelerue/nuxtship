@@ -14,18 +14,18 @@ const isDark = computed({
 </script>
 
 <template>
-  <ColorScheme>
-    <UToggle
-      v-model="isDark"
-      name="theme"
-      icon-on="uil:moon"
-      icon-off="uil:sun"
-      class="theme-select"
-      v-bind="$attrs"
-    >
-      <span class="sr-only">Toggle theme</span>
-    </UToggle>
-  </ColorScheme>
+  <UToggle
+    v-model="isDark"
+    name="theme"
+    icon-on="uil:moon"
+    icon-off="uil:sun"
+    class="theme-select"
+    v-bind="$attrs"
+    on-icon="i-heroicons-moon"
+    off-icon="i-heroicons-sun"
+  >
+    <span class="sr-only">Toggle theme</span>
+  </UToggle>
 </template>
 
 <style lang="postcss">

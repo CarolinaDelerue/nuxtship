@@ -4,5 +4,8 @@ export default defineAppConfig({
   },
   header: {
     logo: '/assets/nuxt.svg'
+  },
+  ui: {
+    primary: 'gray'
   }
 })

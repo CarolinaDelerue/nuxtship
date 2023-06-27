@@ -21,6 +21,7 @@ const blogList = publishedBlogEntries.value!
           <NuxtLink :to="blogPostEntry._path">
             <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
               <NuxtImg
+                class="rounded-md"
                 :src="blogPostEntry.image.src"
                 :alt="blogPostEntry.image.alt"
                 width="430"

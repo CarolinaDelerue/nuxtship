@@ -14,7 +14,7 @@ defineProps({
     <li
       v-for="(item, index) in items"
       :key="index"
-      class="flex items-start gap-3 text-gray-800 dark:text-gray-400"
+      class="flex items-start gap-3 text-gray-800 dark:text-gray-200"
     >
       <div>
         <UIcon

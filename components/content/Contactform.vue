@@ -16,19 +16,18 @@ const result: any = ref()
       name="access_key"
       value="YOUR_ACCESS_KEY_HERE"
     >
-      <input
+      <UInput
         type="checkbox"
         class="hidden"
         style="display:none"
         name="botcheck"
-      >
+      />
       <div class="mb-5">
         <UInput
           type="text"
-          appearance="none"
           placeholder="Full Name"
           required
-          class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+          class="w-full px-4 py-3 placeholder:text-gray-800 dark:placeholder:text-gray-200 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
           name="name"
         >
           <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -40,14 +39,14 @@ const result: any = ref()
         <label
           for="email_address"
           class="sr-only"
-        >Email Address</label><UInput
+        >Email Address</label>
+        <UInput
           id="email_address"
-          appearance="none"
           type="email"
           placeholder="Email Address"
           name="email"
           required
-          class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+          class="w-full px-4 py-3 placeholder:text-gray-800 dark:placeholder:text-gray-200 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
         >
           <div class="empty-feedback text-red-400 text-sm mt-1">
             Please provide your email address.
@@ -55,15 +54,14 @@ const result: any = ref()
           <div class="invalid-feedback text-red-400 text-sm mt-1">
             Please provide a valid email address.
           </div>
-        </uinput>
+        </UInput>
       </div>
-      <div class="mb-3">
+      <div class="mb-5">
         <UTextarea
           name="message"
-          appearance="none"
           required
           placeholder="Your Message"
-          class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+          class="w-full px-4 mb-6 py-3 placeholder:text-gray-800 dark:placeholder:text-gray-200 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
         />
         <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
           Please enter your message.

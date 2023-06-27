@@ -9,7 +9,7 @@ specifiers:
   '@nuxt/eslint-config': ^0.1.1
   '@nuxt/image-edge': 1.0.0-rc.1-28112642.b1c2038
   '@nuxthq/studio': ^0.13.2
-  '@nuxthq/ui': ^2.4.0
+  '@nuxthq/ui': npm:@nuxthq/ui-edge@latest
   '@nuxtjs/html-validator': ^1.4.0
   '@tailwindcss/typography': ^0.5.9
   '@vueuse/core': ^10.1.2
@@ -33,7 +33,7 @@ devDependencies:
   '@iconify-json/uil': 1.1.4
   '@nuxt/devtools': 0.6.0_nuxt@3.5.3
   '@nuxt/eslint-config': 0.1.1_eslint@8.42.0
-  '@nuxthq/ui': 2.4.0
+  '@nuxthq/ui': /@nuxthq/ui-edge/2.4.0-28113754.8bda644
   '@tailwindcss/typography': 0.5.9
   eslint: 8.42.0
   install: 0.13.0
@@ -667,8 +667,8 @@ packages:
       '@hapi/hoek': 9.3.0
     dev: true
 
-  /@headlessui/vue/1.7.10:
-    resolution: {integrity: sha512-qAov7JULOBBes5CU+MiGpwMKoXxLHXS703WEZkOPxYjPD2p7f286ozlFxw7JjA2MmVgbnis2Wvgg/4hT7nRFIg==}
+  /@headlessui/vue/1.7.14:
+    resolution: {integrity: sha512-aL9U9Sa7wdOzlrfjx6EjMIYNRCma5mngWcWzQBcHFwznpRZ8g/QZ/AYFtRDrZZUw22Ttttja4D7ZRXFwhONewA==}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
@@ -1301,12 +1301,12 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@nuxthq/ui/2.4.0:
-    resolution: {integrity: sha512-K7h4USb095DDIq3BCaSLT7mU4UoMzes6ALHqTiDIfuRGnQyTNbvH5oIkBIv1gsKILHzEPWFp391jrEFpwiidtg==}
+  /@nuxthq/ui-edge/2.4.0-28113754.8bda644:
+    resolution: {integrity: sha512-YIiiO7TGeX43hqJpDoJiIBGbIsaHu7Q4TGG0HamkvMY4zFvusMxNjcxLx44qYPXOPOmpJP2DR+3eaFfYNQUp7A==}
     engines: {node: '>=16.14.0'}
     dependencies:
       '@egoist/tailwindcss-icons': 1.1.0_tailwindcss@3.3.2
-      '@headlessui/vue': 1.7.10
+      '@headlessui/vue': 1.7.14
       '@iconify-json/heroicons': 1.1.11
       '@nuxt/kit': 3.5.3
       '@nuxtjs/color-mode': 3.2.0

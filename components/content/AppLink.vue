@@ -39,8 +39,8 @@ const props = defineProps({
 
 const variants = computed(() => {
   return ({
-    outline: 'bg-white border-2 border-black hover:bg-gray-100 text-black',
-    primary: 'bg-black text-white hover:bg-gray-800 border-2 border-transparent',
+    outline: 'bg-white border-2 border-black hover:bg-gray-100 text-black dark:bg-gray-950 dark:border-2 dark:border-white dark:hover:bg-gray-100 dark:text-white',
+    primary: 'bg-gray-950 text-white hover:bg-gray-800 border-2 border-transparent dark:bg-white dark:text-black dark:border-2 dark:border-transparent',
     inverted: 'bg-white text-black border-2 border-transparent',
     muted: 'bg-gray-100 hover:bg-gray-200 border-2 border-transparent',
   })[props.variants]

@@ -3,7 +3,7 @@
     class="flex flex-col w-full order-first lg:order-none border-2 border-[#D8DEE9] border-opacity-50 py-5 px-6 rounded-md"
   >
     <div class="text-center text-lg font-medium text-gray-400">
-      <p class="text-slate-500 dark:text-slate-400">
+      <p class="text-gray-500 dark:text-gray-400">
         <ContentSlot
           :use="$slots.category"
           unwrap="p"
