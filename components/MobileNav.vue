@@ -16,19 +16,22 @@ defineProps({
           v-for="(item, index) in navigation"
           :key="index"
         >
-          <UDropdown
+          <Collapsible
             v-if="item.dropdown"
-            :items="[item.dropdown.items]"
-            :popper="{ placement: 'bottom-start' }"
           >
-            <UButton
-              size="xl"
-              class="-ml-4 text-base font-normal text-gray-600 dark:text-gray-400"
-              variant="link"
-              :label="item.dropdown.title"
-              trailing-icon="i-heroicons-chevron-down-20-solid"
-            />
-          </UDropdown>
+            <ul
+              class="flex flex-col gap-y-2 mb-2 ml-2"
+            >
+              <li
+                v-for="subNav in item.dropdown.items"
+                :key="subNav.label"
+              >
+                <NuxtLink :to="subNav.to">
+                  {{ subNav.label }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </Collapsible>
           <NuxtLink
             v-else
             :to="item._path"
