@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import type { UIcon } from 'types'
+
+defineProps({
+  iconList: {
+    type: Array as PropType<Array<UIcon>>,
+    default: () => []
+  }
+})
+</script>
+
 <template>
   <div class="container mt-24">
     <h2 class="text-center text-gray-500 dark:text-gray-300">
@@ -9,6 +20,12 @@
       </ContentSlot>
     </h2>
     <div class="logos flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+      <UIcon
+        v-for="icon in iconList"
+        :key="icon.name"
+        :name="icon.name"
+        class="w-8 h-8 md:w-12 md:h-12"
+      />
       <ContentSlot
         :use="$slots.default"
         unwrap="p"
