@@ -42,22 +42,22 @@ defineProps({
         </li>
       </ul>
     </nav>
-    <div class="flex items-center justify-center gap-4">
-      <AppLink
+    <div class="flex flex-col items-center justify-center gap-4">
+      <UButton
+        label="Log in"
         to="/"
-        size="md"
-        variants="outline"
-        class="w-full"
-      >
-        Log in
-      </AppLink>
-      <AppLink
+        color="black"
+        size="lg"
+        variant="outline"
+        block
+      />
+      <UButton
+        label="Sign up"
         to="/"
-        size="md"
-        class="w-full"
-      >
-        Sign up
-      </AppLink>
+        color="black"
+        size="lg"
+        block
+      />
     </div>
   </div>
 </template>

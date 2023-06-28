@@ -6,6 +6,6 @@ export default defineAppConfig({
     logo: '/assets/nuxt.svg'
   },
   ui: {
-    primary: 'gray'
+    primary: 'gray',
   }
 })

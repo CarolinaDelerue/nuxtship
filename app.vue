@@ -9,13 +9,14 @@ useHead({
     { rel: 'icon', href: '/icon.png' }
   ],
   meta: [
-    { property: 'og:site_name', content: 'NuxtLabs' },
+    { property: 'og:site_name', content: 'NuxtShip' },
     { property: 'og:type', content: 'website' },
+        // TODO: UPDATE
     { property: 'og:image', content: 'https://nuxtlabs.com/social.png' },
-    { property: 'og:image:alt', content: 'NuxtLabs' },
+    { property: 'og:image:alt', content: 'NuxtShip' },
     { property: 'description', content: 'description' },
     { property: 'twitter:card', content: 'summary_large_image' },
-    { property: 'twitter:site', content: '@nuxtlabs' },
+    { property: 'twitter:site', content: '@NuxtShip' },
   ],
   htmlAttrs: {
     lang: 'en'
