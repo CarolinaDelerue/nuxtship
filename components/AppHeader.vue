@@ -24,10 +24,18 @@
             class="text-lg lg:w-48"
           >
             <NuxtImg
-              :src="appConfig.header.logo"
+              :src="appConfig.header.logoDark"
               alt="Company logo"
-              width="40"
+              width="100"
               height="40"
+              class="hidden dark:block"
+            />
+            <NuxtImg
+              :src="appConfig.header.logoLight"
+              alt="Company logo"
+              width="100"
+              height="40"
+              class="dark:hidden"
             />
           </NuxtLink>
           <UButton
@@ -46,10 +54,18 @@
         class="text-lg lg:w-48"
       >
         <NuxtImg
-          :src="appConfig.header.logo"
+          :src="appConfig.header.logoDark"
           alt="Company logo"
-          width="40"
+          width="100"
           height="40"
+          class="hidden dark:block"
+        />
+        <NuxtImg
+          :src="appConfig.header.logoLight"
+          alt="Company logo"
+          width="100"
+          height="40"
+          class="dark:hidden"
         />
       </NuxtLink>
       <div

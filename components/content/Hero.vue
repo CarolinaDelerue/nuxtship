@@ -8,17 +8,28 @@ defineProps({
   buttons: {
     type: Array as PropType<Array<UButton>>,
     default: () => []
-  }
+  },
+  heroImage: {
+    type: Object as PropType<Image>,
+    default: () => ({})
+  },
+  heroImageClass: {
+    type: String,
+    default: 'rounded-full ring-2 ring-gray-400 dark:ring-gray-500'
+  },
+
 })
 </script>
+
 <template>
   <main class="container grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
     <div class="py-6 md:order-1 hidden md:block">
       <NuxtImg
-        src="/assets/hero.png"
-        alt="Astronaut in the air"
-        width="520"
-        height="424"
+        :src="heroImage.path"
+        :alt="heroImage.alt"
+        :width="heroImage.width"
+        :height="heroImage.height"
+        :class="heroImageClass"
       />
     </div>
     <div>
