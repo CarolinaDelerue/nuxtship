@@ -3,7 +3,8 @@ export default defineAppConfig({
     copyright: 'NuxtShip'
   },
   header: {
-    logo: '/assets/nuxt.svg'
+    logoDark: '/assets/nuxt-light.svg',
+    logoLight: '/assets/nuxt-dark.svg'
   },
   ui: {
     primary: 'gray',
