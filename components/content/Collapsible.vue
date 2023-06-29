@@ -13,7 +13,7 @@ defineProps({
   <div>
     <UButton
       block
-      class="flex !justify-start !text-base !font-normal -ml-[10px]"
+      class="flex !justify-start !text-base !font-normal -ml-[10px] text-gray-600 dark:text-gray-400"
       :label="title"
       :trailing-icon="
         !isCollapse

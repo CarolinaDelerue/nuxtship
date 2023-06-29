@@ -1,3 +1,12 @@
+<script setup lang="ts">
+defineProps({
+  button: {
+    type: Object as PropType<UButton>,
+    default: () => ({})
+  }
+})
+</script>
+
 <template>
   <div
     class="container bg-gray-900 p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center"
@@ -18,7 +27,15 @@
         Missing #description slot
       </ContentSlot>
     </p>
-    <div class="flex mt-5">
+    <UButton
+      v-if="button"
+      class="mt-5"
+      v-bind="button"
+    />
+    <div
+      v-if="$slots.extra"
+      class="flex mt-5"
+    >
       <ContentSlot
         v-if="$slots.extra"
         :use="$slots.extra"

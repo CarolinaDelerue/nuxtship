@@ -1,8 +1,13 @@
 <script setup lang="ts">
+
 defineProps({
   icon: {
     type: String,
     default: ''
+  },
+  buttons: {
+    type: Array as PropType<Array<UButton>>,
+    default: () => []
   }
 })
 </script>
@@ -33,7 +38,19 @@ defineProps({
           Missing #description slot
         </ContentSlot>
       </p>
-      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <div
+        v-if="buttons"
+        class="mt-6 flex flex-col sm:flex-row gap-3"
+      >
+        <UButton
+          v-for="button in buttons"
+          :key="button.label"
+          v-bind="button"
+        />
+      </div>
+      <div
+        v-if="$slots.extra"
+      >
         <ContentSlot
           v-if="$slots.extra"
           :use="$slots.extra"

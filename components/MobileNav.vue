@@ -26,7 +26,10 @@ defineProps({
                 v-for="subNav in item.dropdown.items"
                 :key="subNav.label"
               >
-                <NuxtLink :to="subNav.to">
+                <NuxtLink
+                  :to="subNav.to"
+                  class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300"
+                >
                   {{ subNav.label }}
                 </NuxtLink>
               </li>
@@ -35,29 +38,29 @@ defineProps({
           <NuxtLink
             v-else
             :to="item._path"
-            class="flex lg:px-3 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900"
+            class="flex lg:px-3 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300"
           >
             {{ item.title }}
           </NuxtLink>
         </li>
       </ul>
     </nav>
-    <div class="flex items-center justify-center gap-4">
-      <AppLink
+    <div class="flex flex-col items-center justify-center gap-4">
+      <UButton
+        label="Log in"
         to="/"
-        size="md"
-        variants="outline"
-        class="w-full"
-      >
-        Log in
-      </AppLink>
-      <AppLink
+        color="black"
+        size="lg"
+        variant="outline"
+        block
+      />
+      <UButton
+        label="Sign up"
         to="/"
-        size="md"
-        class="w-full"
-      >
-        Sign up
-      </AppLink>
+        color="black"
+        size="lg"
+        block
+      />
     </div>
   </div>
 </template>

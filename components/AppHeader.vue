@@ -71,20 +71,19 @@
       </nav>
       <div>
         <div class="hidden lg:flex items-center justify-end gap-4">
-          <AppLink
+          <UButton
+            label="Log in"
             to="/"
-            variants="outline"
-            class="text-right"
-            size="md"
-          >
-            Log in
-          </AppLink>
-          <AppLink
+            variant="ghost"
+            size="xl"
+          />
+
+          <UButton
+            label="Sign up"
             to="/"
-            size="md"
-          >
-            Sign up
-          </AppLink>
+            color="black"
+            size="xl"
+          />
         </div>
       </div>
     </div>
