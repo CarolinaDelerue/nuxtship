@@ -12,20 +12,26 @@ export default defineNuxtConfig({
     //https://ui.nuxtlabs.com/getting-started
     '@nuxthq/ui',
   ],
+
   devtools: {
     enabled: true
   },
+
   content: {
     documentDriven: {
       surround: false
     }
   },
+
   image: {
     domains: ['https://images.unsplash.com', 'https://source.unsplash.com'],
     provider: 'ipx',
     inject: true
   },
+
   ui: {
     icons: ['simple-icons', 'bx', 'heroicons', 'uil']
-  }
+  },
+
+  plugins: []
 })

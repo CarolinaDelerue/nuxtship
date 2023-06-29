@@ -9,7 +9,7 @@ defineProps({
 </script>
 
 <template>
-  <div>
+  <div class="relative px-4">
     <nav>
       <ul class="flex flex-col lg:flex-row justify-between mt-1 mb-5 text-gray-600">
         <li

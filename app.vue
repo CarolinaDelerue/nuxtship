@@ -31,10 +31,19 @@ useSeoMeta({
   description,
 })
 
+const open = ref(false)
+
 </script>
 
 <template>
   <div class="flex flex-col px-4 mx-auto">
+    <USlideover
+      v-model="open"
+      @open-menu="open = true"
+      @close-menu="open = false"
+    >
+      <MobileNav />
+    </USlideover>
     <AppHeader />
     <div>
       <NuxtPage />
