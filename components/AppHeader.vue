@@ -1,11 +1,45 @@
 <script setup lang="ts">
   const { navigation } = useContent()
+  const router = useRouter()
   const appConfig = useAppConfig()
-  const isMenuOpen = ref(false)
+
+  const open = ref(false)
+
+  router.afterEach(() => {
+    open.value = false
+  })
 </script>
 
 <template>
   <header class="flex flex-col">
+    <USlideover
+      v-model="open"
+      side="left"
+    >
+      <div class="flex flex-col gap-y-4">
+        <div class="flex justify-between p-4 items-center border-b border-gray-200 dark:border-gray-800">
+          <ThemeSelect />
+          <NuxtLink
+            to="/"
+            class="text-lg lg:w-48"
+          >
+            <NuxtImg
+              :src="appConfig.header.logo"
+              alt="Company logo"
+              width="40"
+              height="40"
+            />
+          </NuxtLink>
+          <UButton
+            variant="ghost"
+            color="white"
+            icon="i-heroicons-x-mark-solid"
+            @click="open = false"
+          />
+        </div>
+        <MobileNav />
+      </div>
+    </USlideover>
     <div class="flex flex-row justify-between items-center my-5 container">
       <NuxtLink
         to="/"
@@ -23,14 +57,9 @@
         @click="isMenuOpen = !isMenuOpen"
       >
         <UIcon
-          v-if="!isMenuOpen"
           name="i-heroicons-bars-3-solid"
           class="h-6 w-6 text-gray-800 dark:text-gray-400 cursor-pointer"
-        />
-        <UIcon
-          v-else
-          name="i-heroicons-x-mark-solid"
-          class="h-6 w-6"
+          @click="open = true"
         />
       </div>
       <nav
@@ -87,10 +116,5 @@
         </div>
       </div>
     </div>
-    <MobileNav
-      v-if="isMenuOpen"
-      class="lg:hidden"
-      :links="navigation"
-    />
   </header>
 </template>
