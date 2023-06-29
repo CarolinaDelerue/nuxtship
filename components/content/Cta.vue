@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { UButton } from 'types'
-
 defineProps({
   button: {
     type: Object as PropType<UButton>,
@@ -32,18 +30,7 @@ defineProps({
     <UButton
       v-if="button"
       class="mt-5"
-      :label="button.label"
-      :variant="button.variant || 'solid'"
-      :to="button.to"
-      :icon="button.icon"
-      :trailing="button.trailing"
-      :trailing-icon="button.trailingIcon"
-      :leading="button.leading"
-      :leading-icon="button.leadingIcon"
-      :block="button.block"
-      :color="button.color"
-      :square="button.square"
-      :size="button.size"
+      v-bind="button"
     />
     <div
       v-if="$slots.extra"

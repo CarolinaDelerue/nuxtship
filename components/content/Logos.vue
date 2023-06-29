@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import type { UIcon } from 'types'
-
 defineProps({
   iconList: {
-    type: Array as PropType<Array<UIcon>>,
+    type: Array,
     default: () => []
   }
 })

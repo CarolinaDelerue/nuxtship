@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { UButton } from 'types'
-
 defineProps({
   button: {
     type: Object as PropType<UButton>,
@@ -38,24 +36,16 @@ defineProps({
         unwrap="p"
       />
     </div>
-    <div
-      v-if="button"
-      class="flex mt-8"
-    >
-      <UButton
-        :label="button.label"
-        :variant="button.variant || 'solid'"
-        :to="button.to"
-        :icon="button.icon"
-        :trailing="button.trailing"
-        :trailing-icon="button.trailingIcon"
-        :leading="button.leading"
-        :leading-icon="button.leadingIcon"
-        :block="button.block"
-        :color="button.color"
-        :square="button.square"
-        :size="button.size"
-      />
+    <div class="h-full flex items-end w-full">
+      <div
+        v-if="button"
+        class="flex mt-8 w-full"
+      >
+        <UButton
+          v-bind="button"
+          class="place-self-end"
+        />
+      </div>
     </div>
   </div>
 </template>

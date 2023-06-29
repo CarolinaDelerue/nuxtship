@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { UButton } from 'types'
 
 defineProps({
   icon: {
@@ -46,18 +45,7 @@ defineProps({
         <UButton
           v-for="button in buttons"
           :key="button.label"
-          :label="button.label"
-          :variant="button.variant"
-          :to="button.to"
-          :icon="button.icon"
-          :trailing="button.trailing"
-          :trailing-icon="button.trailingIcon"
-          :leading="button.leading"
-          :leading-icon="button.leadingIcon"
-          :block="button.block"
-          :color="button.color"
-          :square="button.square"
-          :size="button.size"
+          v-bind="button"
         />
       </div>
       <div
