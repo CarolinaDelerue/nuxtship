@@ -28,7 +28,7 @@ const blogList = publishedBlogEntries.value!
                 height="240"
               />
               <div>
-                <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
+                <span class="text-green-500 dark:text-green-400 uppercase tracking-wider text-sm font-medium">
                   {{ blogPostEntry.category }}
                 </span>
 
