@@ -52,19 +52,17 @@
           height="40"
         />
       </NuxtLink>
-      <div
-        class="lg:hidden flex w-full justify-end"
-        @click="isMenuOpen = !isMenuOpen"
-      >
-        <UIcon
-          name="i-heroicons-bars-3-solid"
-          class="h-6 w-6 text-gray-800 dark:text-gray-400 cursor-pointer"
-          @click="open = true"
-        />
-      </div>
+
+      <UButton
+        class="lg:hidden"
+        icon="i-heroicons-bars-3-solid"
+        variant="ghost"
+        color="white"
+        @click="open = true"
+      />
+
       <nav
-        class="lg:block"
-        :class="{'hidden': !isMenuOpen}"
+        class="hidden lg:block"
       >
         <div class="w-full lg:w-auto mt-2 lg:flex lg:mt-0">
           <ul class="hidden items-center lg:flex flex-col lg:flex-row lg:gap-3">
@@ -90,7 +88,6 @@
                 v-else
                 :to="item._path"
                 class="flex lg:px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-                @click="isMenuOpen = false"
               >
                 {{ item.title }}
               </NuxtLink>
@@ -98,8 +95,8 @@
           </ul>
         </div>
       </nav>
-      <div>
-        <div class="hidden lg:flex items-center justify-end gap-4">
+      <div class="hidden lg:flex ">
+        <div class="items-center justify-end gap-4">
           <UButton
             label="Log in"
             to="/"
