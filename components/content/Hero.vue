@@ -51,7 +51,7 @@ defineProps({
       </p>
       <div
         v-if="buttons"
-        class="mt-6 flex flex-col sm:flex-row gap-3"
+        class="mt-6 flex flex-col sm:flex-row gap-3 md:mb-16"
       >
         <UButton
           v-for="button in buttons"
