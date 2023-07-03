@@ -1,0 +1,1 @@
+import{l as t,b as s,c,U as o}from"./entry.ec9617f5.js";const n={},r={class:"container"};function a(e,l){return s(),c("div",r,[o(e.$slots,"default")])}const d=t(n,[["render",a]]);export{d as default};
