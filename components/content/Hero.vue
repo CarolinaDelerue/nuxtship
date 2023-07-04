@@ -33,7 +33,7 @@ defineProps({
       />
     </div>
     <div>
-      <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-center lg:text-start">
         <ContentSlot
           :use="$slots.title"
           unwrap="p"
@@ -41,7 +41,7 @@ defineProps({
           Missing Title
         </ContentSlot>
       </h1>
-      <p class="text-lg mt-4 text-gray-600 dark:text-gray-400 max-w-xl">
+      <p class="text-lg mt-4 text-gray-600 dark:text-gray-400 max-w-xl text-center lg:text-start">
         <ContentSlot
           :use="$slots.description"
           unwrap="p"
@@ -51,7 +51,7 @@ defineProps({
       </p>
       <div
         v-if="buttons"
-        class="mt-6 flex flex-col sm:flex-row gap-3 md:mb-16"
+        class="mt-6 flex flex-col sm:flex-row gap-3 md:mb-16 justify-center items-center lg:justify-start lg:items-start"
       >
         <UButton
           v-for="button in buttons"

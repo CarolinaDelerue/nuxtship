@@ -5,7 +5,7 @@ const { page } = useContent()
 <template>
   <div>
     <div class="mx-auto max-w-3xl mt-14">
-      <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
+      <span class="text-green-500 dark:text-green-400 uppercase tracking-wider text-sm font-medium">
         {{ page.category }}
       </span>
       <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight">

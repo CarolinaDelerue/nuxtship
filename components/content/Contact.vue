@@ -34,7 +34,7 @@ defineProps({
             class="text-gray-500 w-6 h-6 dark:text-gray-300"
             name="i-uil-map-marker"
           />
-          <p class="text-lg leading-relaxed text-gray-500 dark:text-gray-300">
+          <p class="leading-relaxed text-gray-600 dark:text-gray-400">
             <ContentSlot
               v-if="$slots.address"
               :use="$slots.address"

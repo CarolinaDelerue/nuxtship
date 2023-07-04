@@ -30,6 +30,6 @@ const isDark = computed({
 
 <style lang="postcss">
 .theme-select {
-  @apply bg-gray-200 dark:bg-gray-800
+  @apply bg-gray-200 dark:bg-gray-900
 }
 </style>
