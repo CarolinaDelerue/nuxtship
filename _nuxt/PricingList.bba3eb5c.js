@@ -1,1 +1,0 @@
-import{l as s,b as t,c,U as r}from"./entry.13f0887f.js";const o={},n={class:"container grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12"};function a(e,i){return t(),c("div",n,[r(e.$slots,"default")])}const d=s(o,[["render",a]]);export{d as default};
