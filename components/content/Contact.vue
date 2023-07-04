@@ -28,20 +28,6 @@ defineProps({
         </ContentSlot>
       </p>
       <div class="mt-5">
-        <div class="flex items-center mt-2 space-x-2 text-gray-600 dark:text-gray-400">
-          <UIcon
-            v-if="$slots.address"
-            class="text-gray-500 w-6 h-6 dark:text-gray-300"
-            name="i-uil-map-marker"
-          />
-          <p class="leading-relaxed text-gray-600 dark:text-gray-400">
-            <ContentSlot
-              v-if="$slots.address"
-              :use="$slots.address"
-              unwrap="p"
-            />
-          </p>
-        </div>
         <div
           v-if="contactButtons"
           class="flex flex-col gap-y-2 mt-2 -ml-4"
