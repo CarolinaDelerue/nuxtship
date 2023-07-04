@@ -31,7 +31,7 @@ defineProps({
         <div class="flex items-center mt-2 space-x-2 text-gray-600 dark:text-gray-400">
           <UIcon
             v-if="$slots.address"
-            class="text-gray-400 w-4 h-4"
+            class="text-gray-500 w-6 h-6 dark:text-gray-300"
             name="i-uil-map-marker"
           />
           <p class="text-lg leading-relaxed text-gray-500 dark:text-gray-300">
