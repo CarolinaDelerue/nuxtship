@@ -27,7 +27,7 @@ const result: any = ref()
           type="text"
           placeholder="Full Name"
           required
-          class="w-full px-4 py-3 placeholder:text-gray-800 dark:placeholder:text-gray-200 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+          class="w-full px-4 py-3 placeholder:text-gray-800 dark:placeholder:text-gray-200 rounded-md outline-none focus:ring-2 border-gray-300 focus:border-gray-600 ring-gray-100 focus:ring-gray-500 dark:focus:ring-gray-200"
           name="name"
         >
           <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -46,7 +46,7 @@ const result: any = ref()
           placeholder="Email Address"
           name="email"
           required
-          class="w-full px-4 py-3 placeholder:text-gray-800 dark:placeholder:text-gray-200 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+          class="w-full px-4 py-3 placeholder:text-gray-800 dark:placeholder:text-gray-200 rounded-md outline-none focus:ring-2 border-gray-300 focus:border-gray-600 ring-gray-100 focus:ring-gray-500 dark:focus:ring-gray-200"
         >
           <div class="empty-feedback text-red-400 text-sm mt-1">
             Please provide your email address.
@@ -61,7 +61,7 @@ const result: any = ref()
           name="message"
           required
           placeholder="Your Message"
-          class="w-full px-4 mb-6 py-3 placeholder:text-gray-800 dark:placeholder:text-gray-200 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+          class="w-full px-4 mb-6 py-3 placeholder:text-gray-800 dark:placeholder:text-gray-200 rounded-md outline-none h-36 focus:ring-2 border-gray-300 focus:border-gray-600 ring-gray-100 focus:ring-gray-500 dark:focus:ring-gray-200"
         />
         <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
           Please enter your message.
